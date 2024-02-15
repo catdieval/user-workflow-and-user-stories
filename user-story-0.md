@@ -50,7 +50,7 @@ I want to see a homepage with an introduction to the website, and a "Get Started
 
 - [ ] Inside this folder create a \_app.js file.
 
--[ ] Go to the \_app.js file and make a default import of createGlobalStyle from "../styles".
+- [ ] Go to the \_app.js file and make a default import of createGlobalStyle from "../styles".
 
 - [ ] Declare a function "App" and export it by default.
 
