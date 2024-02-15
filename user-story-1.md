@@ -18,13 +18,15 @@ so that I can click on the type I want.
 
 ## Tasks
 
-- [ ] In the "pages" folder, create an empty "UploadDataPage.js" file.
+- [ ] In the "pages" folder, create a "UploadDataPage.js" file.
 
-- [ ] Create a component folder and inside create a ChartItem.js file.
+- [ ] Inside the "Component" folder create a ChartItem folder.
+
+- [ ] Inside the "ChartItem" folder create a ChartItem.js file.
 
 - [ ] Create an asset folder that will contain the images for each type of chart, with filenames like "line-plot", "scatter-plot".
 
-- Go to the "ListOfChartsPage.js" file and make a default import to the ChartItem component.
+- Inside the "pages" folder go to the "ListOfChartsPage.js" file and make a default import to the ChartItem component from "../Component/ChartItem.js".
 
 - [ ] Make a default import of "styled" from "styled-components".
 
@@ -50,6 +52,8 @@ so that I can click on the type I want.
 
 - [ ] Go to the ChartItem.js file, and inside make a named import of useRouter from "next/router".
 
+- [ ] Make a named import of StyledButton from "../Button/Button.styled".
+
 - [ ] Declare a "ChartItem" function and export it by default.
 
 - [ ] The function takes for arguments the "name" prop and the "image" prop.
@@ -58,8 +62,8 @@ so that I can click on the type I want.
 
 - [ ] Write an handleClick function, which pushes using router to the "UploadDataPage.js" page.
 
-- [ ] The ChartItem function returns, within a fragment, a button element and an img element.
+- [ ] The ChartItem function returns, within a fragment, the StyledButton component and an img element.
 
 - [ ] The img element takes an src attribute set to the "image" prop.
 
-- [ ] The button takes an onClick attribute which has handleClick as prop. The text of the button is the "name" prop.
+- [ ] The StyledButton of type "button" takes an onClick attribute which has handleClick as prop. The text of the button is the "name" prop.
