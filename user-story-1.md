@@ -10,7 +10,8 @@ so that I can click on the type I want.
 
 - h1 header with "PLOTDATA".
 - h2 header with "Step 1: Decide what type of chart.".
-- List (without bullet points) of images corresponding to examples of each type of chart, with corresponding button named after the type of chart, displayed in a row with possibility of wrapping.
+- List (without bullet points) of images corresponding to examples of each type of chart, with corresponding deepskyblue button named after the type of chart, displayed in a row with possibility of wrapping.
+- The elements do not extend to each end of the page, but are centered in the middle.
 
 ## Acceptance criteria
 
