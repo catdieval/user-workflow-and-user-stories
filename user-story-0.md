@@ -14,6 +14,7 @@ I want to see a homepage with an introduction to the website, and a "Get Started
 - Paragraph to announce that a chart is generated.
 - Unordered list of possible actions once a chart is generated.
 - A deepskyblue button with the text "Get started".
+- The elements do not extend to each end of the page, but are centered in the middle.
 
 ## Acceptance criteria
 
@@ -21,9 +22,39 @@ I want to see a homepage with an introduction to the website, and a "Get Started
 
 ## Tasks
 
-- [ ] Create a "pages" folder and inside create a index.js file.
+- [ ] Create a styles.js file.
 
-- [ ] In the same folder create a "ListOfChartsPage.js" file.
+- [ ] Go to styles.js and make a named import of "createGlobalStyle" from "styled-components".
+
+- [ ] Make a default export of createGlobalStyle, where you write the following styling properties:
+      _,
+      _::before,
+      \*::after {
+      box-sizing: border-box;
+      }
+
+  body {
+  display: grid;
+  margin: auto;
+  font-family: system-ui;
+  place-items: center;
+  min-height: 100vh;
+  max-width: 50rem;
+  }
+
+- [ ] Create a "pages" folder.
+
+- [ ] Inside this folder create a index.js file.
+
+- [ ] Inside this folder create a "ListOfChartsPage.js" file.
+
+- [ ] Inside this folder create a \_app.js file.
+
+-[ ] Go to the \_app.js file and make a default import of createGlobalStyle from "../styles".
+
+- [ ] Declare a function "App" and export it by default.
+
+- [ ] The function returns, nested within a fragment, the createGlobalStyle component.
 
 - [ ] Create a "Component" folder.
 
