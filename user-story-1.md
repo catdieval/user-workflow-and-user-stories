@@ -15,6 +15,7 @@ so that I can click on the type I want.
 
 ## Acceptance criteria
 
+- [ ] Clicking on a button saves the text of the button to a clickedChartType variable.
 - [ ] Clicking on a button brings the user to the page with the data upload.
 
 ## Tasks
@@ -25,15 +26,23 @@ so that I can click on the type I want.
 
 - [ ] Inside the "ChartItem" folder create a ChartItem.js file.
 
-- [ ] Create an asset folder that will contain the images for each type of chart, with filenames like "line-plot", "scatter-plot".
+- [ ] Create an asset folder that will contain the images for each type of chart, with filenames like "lines plot", "scatter plot", "lines+markers plot", "bar plot".
 
 - Inside the "pages" folder go to the "ListOfChartsPage.js" file and make a default import to the ChartItem component from "../Component/ChartItem.js".
 
 - [ ] Make a default import of "styled" from "styled-components".
 
+- [ ] Make a default import of "useState" from "react".
+
 - [ ] Declare a ListOfCharts function and export it by default.
 
-- [ ] Inside the function declare an array chartarray containing objects with the keys "name" and "image". The "name" key has for value a string corresponding to the name of each type of graph (e.g. "line-plot", "scatter-plot"). The "image" key has for value a string corresponding to the path to the associated picture.
+- [ ] Inside the function declare a state for the clickedChartType variable, initialised to "".
+
+- [ ] Declare an array "chartarray" containing objects with the keys "type", "mode" and "name".
+
+  - The "type" key has for value a string corresponding to the name of the type of chart (e.g. "scatter", "bar").
+  - The "mode" key has for value a string corresponding to the name of the type of plotting mode (e.g. "lines", "markers", "lines+markers").
+  - The "name" key has for value a string corresponding to the name of the associated picture.
 
 - [ ] Write a StyledDiv component which styles a div element using styled, with the display set to "flex", the flex-direction set to "row", the flex-wrap set to "wrap" and the justify-content set to "space-around".
 
@@ -49,7 +58,7 @@ so that I can click on the type I want.
 
 - [ ] Within the li, nest the ChartItem component.
 
-- [ ] Give the keys "name" and "image" as props to ChartItem.
+- [ ] Give the key "name" and the setter setClickedChartType as props to ChartItem.
 
 - [ ] Go to the ChartItem.js file, and inside make a named import of useRouter from "next/router".
 
@@ -57,14 +66,20 @@ so that I can click on the type I want.
 
 - [ ] Declare a "ChartItem" function and export it by default.
 
-- [ ] The function takes for arguments the "name" prop and the "image" prop.
+- [ ] The function takes for arguments the props "name" and "setClickedChartType".
 
 - [ ] Inside the function declare a constant router = useRouter().
 
-- [ ] Write an handleClick function, which pushes using router to the "UploadDataPage.js" page.
+- [ ] Write an handleClick function, taking "event" as argument.
+
+- [ ] This function calls an alert function with the text event.target.value.
+
+- [ ] This function uses the setter SetClickedChartType with the value event.target.value.
+
+- [ ] This function also pushes using router to the "UploadDataPage.js" page.
 
 - [ ] The ChartItem function returns, within a fragment, the StyledButton component and an img element.
 
-- [ ] The img element takes an src attribute set to the "image" prop.
+- [ ] The img element takes an src attribute set to the path of the associated picture, using the "name" prop.
 
 - [ ] The StyledButton of type "button" takes an onClick attribute which has handleClick as prop. The text of the button is the "name" prop.
