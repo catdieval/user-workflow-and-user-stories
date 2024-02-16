@@ -24,7 +24,7 @@ I want to see a homepage with an introduction to the website, and a "Get Started
 
 - [ ] Create a styles.js file.
 
-- [ ] Go to styles.js and make a named import of "createGlobalStyle" from "styled-components".
+- [ ] Go to styles.js and make a named import of createGlobalStyle from "styled-components".
 
 - [ ] Make a default export of createGlobalStyle, where you write the following styling properties:
       _,
@@ -42,35 +42,95 @@ I want to see a homepage with an introduction to the website, and a "Get Started
   max-width: 50rem;
   }
 
-- [ ] Create a "pages" folder.
+- [ ] Create a pages folder.
 
 - [ ] Inside this folder create a index.js file.
 
-- [ ] Inside this folder create a "ListOfChartsPage.js" file.
+- [ ] Inside this folder create a ListOfChartsPage.js file.
 
 - [ ] Inside this folder create a \_app.js file.
 
 - [ ] Go to the \_app.js file and make a default import of createGlobalStyle from "../styles".
 
-- [ ] Declare a function "App" and export it by default.
+- [ ] Declare a function App and export it by default.
 
-- [ ] The function returns, nested within a fragment, the createGlobalStyle component.
+- [ ] The function returns the createGlobalStyle component.
 
-- [ ] Create a "Component" folder.
+- [ ] Create a Component folder.
 
 - [ ] In this folder create a Button folder.
 
 - [ ] In the Button folder create a Button.styled.js file.
 
-- [ ] Go to Button.Styled.js and make a default import of "styled" from "styled-components".
+- [ ] Go to Button.Styled.js and make a default import of styled from "styled-components".
 
-- [ ] Write a StyledButton component which styles a button element using styled, with background-color set to "deepskyblue".
+- [ ] Write a StyledButton component which styles a button element using styled, with background-color set to deepskyblue.
 
 - Make a named export of StyledButton.
+
+- [ ] In the Component folder create a Title folder.
+
+- [ ] In the Title folder create a Title.styled.js file.
+
+- [ ] Go to Title.styled.js and make a default import of styled from "styled-components".
+
+- [ ] Write a StyledTitle component which styles a h1 element using styled, with text-align set to center.
+
+- Make a named export of StyledTitle.
+
+- [ ] In the Component folder create a Heading folder.
+
+- [ ] In the Heading folder create a Heading.styled.js file.
+
+- [ ] Go to Heading.styled.js and make a default import of styled from "styled-components".
+
+- [ ] Write a StyledHeading component which styles a h2 element using styled, with text-align set to center.
+
+- [ ] Make a named export of StyledHeading.
+
+- [ ] In the Component folder create a Paragraph folder.
+
+- [ ] In the Paragraph folder create a Paragraph.styled.js file.
+
+- [ ] Go to Paragraph.styled.js and make a default import of styled from "styled-components".
+
+- [ ] Write a StyledParagraph component which styles a p element using styled, with text-align set to center.
+
+- [ ] Make a named export of StyledParagraph.
+
+- [ ] In the folder Component create a Ul folder.
+
+- [ ] In the Ul folder create a Ul.styled.js file.
+
+- [ ] Go to Ul.styled.js and make a default import of styled from "styled-components".
+
+- [ ] Write a StyledUl component which styles a ul element using styled, with text-align set to center.
+
+- [ ] Make a named export of StyledUl.
+
+- [ ] In the Component folder create a Div folder.
+
+- [ ] In the Div folder create a Div.styled.js file.
+
+- [ ] Go to Div.styled.js and make a default import of styled from "styled-components".
+
+- [ ] Write a StyledDiv component which styles a div element using styled, with text-align set to center.
+
+- [ ] Make a named export of StyledDiv.
 
 - [ ] In the "pages" folder go to index.js, and make a named import of useRouter from "next/router".
 
 - [ ] Make a named import of StyledButton from "../Component/Button/Button.styled".
+
+- [ ] Make a named import of StyledTitle from "../Components/Title/Title.styled".
+
+- [ ] Make a named import of StyledHeading from "../Component/Heading/Heading.styled".
+
+- [ ] Make a named import of StyledParagraph from "../Components/Paragraph/Paragraph.styled".
+
+- [ ] Make a named import of StyledUl from "../Components/Ul/Ul.styled".
+
+- [ ] Make a named import of StyledDiv from "../Components/Div/Div.styled".
 
 - [ ] Declare a "Homepage" function and export it by default.
 
@@ -78,15 +138,15 @@ I want to see a homepage with an introduction to the website, and a "Get Started
 
 - [ ] Write an handleClick function, which pushes using router to the "ListOfChartsPage.js" page.
 
-- [ ] The function returns, nested in a fragment, a h1 heading, several line breaks, a paragraph, several line breaks, a h2 heading, an unordered list, a paragraph, an unordered list, several line breaks and finally the StyledButton component.
+- [ ] The function returns, nested in a fragment, the StyledTitle component, several line breaks, the StyledParagraph component, several line breaks, the StyledHeading component, the StyledUl component, the StyledParagraph component, the StyledUl component, several line breaks and finally the StyledDiv component and nested within the StyledButton component. This div element is necessary in order to center the button horizontally.
 
-- [ ] The h1 has for text "PLOTDATA".
+- [ ] StyledTitle has for text "PLOTDATA".
 
-- [ ] The first p has for text "With PLOTDATA you can use data to easily make customizable publication-quality charts, all without programming.".
+- [ ] The first call to StyledParagraph has for text "With PLOTDATA you can use data to easily make customizable publication-quality charts, all without programming.".
 
-- [ ] The h2 has for text "Overview of the different steps".
+- [ ] StyledHeading has for text "Overview of the different steps".
 
-- [ ] The first ul has li elements nested with the following text:
+- [ ] The first call to StyledUl has li elements nested with the following text:
 
   - Step 1: Decide what type of graph.
   - Step 2: Upload a CSV file to get the data.
@@ -95,11 +155,11 @@ I want to see a homepage with an introduction to the website, and a "Get Started
   - Step 5: Give a title to the chart.
   - Step 6 (last step): Assign plotting properties to the chart.
 
-- [ ] The second p has for text "Et voila! A interactive chart gets generated, with the help of the Plotly Javascript library."
+- [ ] The second call to StyledParagraph has for text "Et voila! A interactive chart gets generated, with the help of the Plotly Javascript library."
 
-- [ ] The second ul has li elements nested with the following text:
+- [ ] The second call to StyledUl has li elements nested with the following text:
 
   - You can export the chart as PNG image to share with others or include in reports or presentations.
   - You can also go back to the previous steps to use different parameters and regenerate the chart.
 
-- [ ] The StyledButton of type "button" takes an onClick attribute which has handleClick as prop. The text of the button is "Get started".
+- [ ] The StyledButton of type "button" takes an onClick attribute which has handleClick as prop. The text of StyledButton is "Get started".
