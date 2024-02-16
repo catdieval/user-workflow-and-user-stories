@@ -20,6 +20,18 @@ so that I can click on the type I want.
 
 ## Tasks
 
+- [ ] Create a "lib" folder.
+
+- [ ] Inside this folder create a "listofcharttypes.js" file.
+
+- [ ] Go to "listofcharttypes.js" and declare an array "chartarray" containing objects with the keys "type", "mode" and "name".
+
+  - The "type" key has for value a string corresponding to the name of the type of chart (e.g. "scatter", "bar").
+  - The "mode" key has for value a string corresponding to the name of the type of plotting mode (e.g. "lines", "markers", "lines+markers").
+  - The "name" key has for value a string corresponding to the name of the associated picture.
+
+- [ ] Make a named export of chartarray.
+
 - [ ] In the "pages" folder, create a "UploadDataPage.js" file.
 
 - [ ] Inside the "Component" folder create a ChartItem folder.
@@ -30,6 +42,8 @@ so that I can click on the type I want.
 
 - Inside the "pages" folder go to the "ListOfChartsPage.js" file and make a default import to the ChartItem component from "../Component/ChartItem.js".
 
+- [ ] Make a named import of "chartarray" from "../lib/listofcharttypes".
+
 - [ ] Make a default import of "styled" from "styled-components".
 
 - [ ] Make a default import of "useState" from "react".
@@ -37,12 +51,6 @@ so that I can click on the type I want.
 - [ ] Declare a ListOfCharts function and export it by default.
 
 - [ ] Inside the function declare a state for the clickedChartType variable, initialised to "".
-
-- [ ] Declare an array "chartarray" containing objects with the keys "type", "mode" and "name".
-
-  - The "type" key has for value a string corresponding to the name of the type of chart (e.g. "scatter", "bar").
-  - The "mode" key has for value a string corresponding to the name of the type of plotting mode (e.g. "lines", "markers", "lines+markers").
-  - The "name" key has for value a string corresponding to the name of the associated picture.
 
 - [ ] Write a StyledDiv component which styles a div element using styled, with the display set to "flex", the flex-direction set to "row", the flex-wrap set to "wrap" and the justify-content set to "space-around".
 
@@ -54,7 +62,7 @@ so that I can click on the type I want.
 
 - [ ] The h2 has for text "Step 1: Decide what type of chart.".
 
-- [ ] Nest curly brackets within the StyledUl, where you use forEach over the chartarray to render a li element.
+- [ ] Nest curly brackets within the StyledUl, where you use forEach over chartarray to render a li element.
 
 - [ ] Within the li, nest the ChartItem component.
 
