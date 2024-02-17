@@ -20,18 +20,6 @@ so that I can click on the type I want.
 
 ## Tasks
 
-- [ ] Create a lib folder.
-
-- [ ] Inside this folder create a listofcharttypes.js file.
-
-- [ ] Go to listofcharttypes.js and declare an array chartarray containing objects with the keys "type", "mode" and "name".
-
-  - The type key has for value a string corresponding to the name of the type of chart (e.g. "scatter", "bar").
-  - The mode key has for value a string corresponding to the name of the type of plotting mode (e.g. "lines", "markers", "lines+markers").
-  - The name key has for value a string corresponding to the name of the associated picture.
-
-- [ ] Make a named export of chartarray.
-
 - [ ] Inside the assets folder create a chart-types folder.
 
 - [ ] In the browser go to the codesandbox website, log in, click on "Create a sandbox", then click on "React, then give the name chart-types for the file.
@@ -86,13 +74,23 @@ so that I can click on the type I want.
 
 - Repeat the process for other types of charts. The figure files will have names like "lines plot", "scatter plot", "lines+markers plot", "bar plot".
 
+- [ ] Inside the lib folder create a listofcharttypes.js file.
+
+- [ ] Go to listofcharttypes.js and declare an array chartarray containing objects with the keys "type", "mode" and "name".
+
+  - The type key has for value a string corresponding to the name of the type of chart (e.g. "scatter", "bar").
+  - The mode key has for value a string corresponding to the name of the type of plotting mode (e.g. "lines", "markers", "lines+markers").
+  - The name key has for value a string corresponding to the name of the associated picture contained in the chart-types folder.
+
+- [ ] Make a named export of chartarray.
+
 - [ ] In the pages folder, create a UploadDataPage.js file.
 
 - [ ] Inside the Component folder create a ChartItem folder.
 
 - [ ] Inside the ChartItem folder create a ChartItem.js file.
 
-- Inside the pages folder go to the ListOfChartsPage.js file and make a default import to the ChartItem component from "../Component/ChartItem.js".
+- Go to ListOfChartsPage.js and make a default import to the ChartItem component from "../Component/ChartItem.js".
 
 - [ ] Make a named import of StyledTitle from "../Components/Title/Title.styled".
 
@@ -102,7 +100,7 @@ so that I can click on the type I want.
 
 - [ ] Make a named import of StyledDiv2 from "../Components/Div2/Div2.styled".
 
-- [ ] Make a named import of chartarray from "../lib/listofcharttypes".
+- [ ] Make a named import of chartarray from "../lib/listofcharttypes.js".
 
 - [ ] Declare a ListOfCharts function and export it by default.
 
@@ -126,6 +124,8 @@ so that I can click on the type I want.
 
 - [ ] Make a named import of StyledButton from "../Button/Button.styled".
 
+- [ ] Make a named import of StyledImg from "../Img/Img.styled.js".
+
 - [ ] Declare a ChartItem function and export it by default.
 
 - [ ] The function takes for argument the prop name.
@@ -142,8 +142,8 @@ so that I can click on the type I want.
 
 - [ ] This function pushes using router to the UploadDataPage.js page.
 
-- [ ] The ChartItem function returns, within a fragment, the StyledButton component and an img element.
+- [ ] The ChartItem function returns, within a fragment, the StyledButton component and the StyledImg component.
 
-- [ ] The img element takes an src attribute set to the path of the associated picture, using the name prop.
+- [ ] StyledImg takes an src attribute set to the path of the associated picture, using the name prop.
 
 - [ ] The StyledButton of type "button" takes an onClick attribute which has handleClick as prop. The text of the button is the name prop.
