@@ -56,6 +56,10 @@ I want to see a homepage with an introduction to the website, and a "Get Started
 
 - [ ] The function returns the createGlobalStyle component.
 
+- [ ] Create an "asset" folder and inside of it an "picture-examples" folder.
+
+- [ ]
+
 - [ ] Create a Component folder.
 
 - [ ] In this folder create a Button folder.
@@ -118,6 +122,26 @@ I want to see a homepage with an introduction to the website, and a "Get Started
 
 - [ ] Make a named export of StyledDiv.
 
+- [ ] In the Component folder create a Div2 folder.
+
+- [ ] In the Div2 folder create a Div2.styled.js file.
+
+- [ ] Go to Div2.styled.js and make a default import of styled from "styled-components".
+
+- [ ] Write a StyledDiv2 component which styles a div element using styled, with the display set to flex, the flex-direction set to row, the flex-wrap set to wrap and the justify-content set to space-around..
+
+- [ ] Make a named export of StyledDiv2.
+
+- [ ] In the folder Component create a Ul2 folder.
+
+- [ ] In the Ul2 folder create a Ul2.styled.js file.
+
+- [ ] Go to Ul2.styled.js and make a default import of styled from "styled-components".
+
+- [ ] Write a StyledUl2 component which styles a ul element using styled, with the list-style-type set to none.
+
+- [ ] Make a named export of StyledUl2.
+
 - [ ] In the "pages" folder go to index.js, and make a named import of useRouter from "next/router".
 
 - [ ] Make a named import of StyledButton from "../Component/Button/Button.styled".
@@ -132,17 +156,25 @@ I want to see a homepage with an introduction to the website, and a "Get Started
 
 - [ ] Make a named import of StyledDiv from "../Components/Div/Div.styled".
 
-- [ ] Declare a "Homepage" function and export it by default.
+- [ ] Make a named import of StyledUl2 from "../Components/Ul2/Ul2.styled".
+
+- [ ] Make a named import of StyledDiv2 from "../Components/Div2/Div2.styled".
+
+- [ ] Declare a Homepage function and export it by default.
 
 - [ ] Inside the function declare a constant router = useRouter();
 
-- [ ] Write an handleClick function, which pushes using router to the "ListOfChartsPage.js" page.
+- [ ] Write an handleClick function, which pushes using router to the ListOfChartsPage.js page.
 
-- [ ] The function returns, nested in a fragment, the StyledTitle component, several line breaks, the StyledParagraph component, several line breaks, the StyledHeading component, the StyledUl component, the StyledParagraph component, the StyledUl component, several line breaks and finally the StyledDiv component and nested within the StyledButton component. This div element is necessary in order to center the button horizontally.
+- [ ] The Homepage function returns, nested in a fragment, the StyledTitle component, several line breaks, the StyledParagraph component, several line breaks, the StyledDiv2 component and nested within the StyledUl2 component, the StyledHeading component, the StyledUl component, the StyledParagraph component, the StyledUl component, several line breaks and finally the StyledDiv component and nested within the StyledButton component. This div element is necessary in order to center the button horizontally.
 
 - [ ] StyledTitle has for text "PLOTDATA".
 
 - [ ] The first call to StyledParagraph has for text "With PLOTDATA you can use data to easily make customizable publication-quality charts, all without programming.".
+
+- [ ] Nest curly brackets within the StyledUl2, where you use forEach over chartarray to render a li element.
+
+- [ ] Within the li, nest the ChartItem component.
 
 - [ ] StyledHeading has for text "Overview of the different steps".
 
