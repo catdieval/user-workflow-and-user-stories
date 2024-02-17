@@ -84,11 +84,11 @@ so that I can click on the type I want.
 
 - [ ] Write an handleClick function, taking event as argument.
 
-- [ ] This function calls an alert function with the text `You chose ${event.target.value}`.
-
 - [ ] This function uses the setter setClickedChartType with the value event.target.value.
 
-- [ ] This function also pushes using router to the UploadDataPage.js page.
+- [ ] This function calls an alert function with the text `You chose "${clickedChartType}"`.
+
+- [ ] This function pushes using router to the UploadDataPage.js page.
 
 - [ ] The ChartItem function returns, within a fragment, the StyledButton component and an img element.
 
