@@ -32,7 +32,59 @@ so that I can click on the type I want.
 
 - [ ] Make a named export of chartarray.
 
-- [ ] Create an asset folder that will contain the images for each type of chart, with filenames like "lines plot", "scatter plot", "lines+markers plot", "bar plot".
+- [ ] Inside the assets folder create a chart-types folder.
+
+- [ ] In the browser go to the codesandbox website, log in, click on "Create a sandbox", then click on "React, then give the name chart-types for the file.
+
+- [ ] In the dependencies menu, search and install these libraries: plotly.js 2.29.1 and react-plotly.js 2.6.0.
+
+- [ ] Go to the App.js file that was generated and open the preview. Make a default import of Plot from "react-plotly.js".
+
+- [ ] Replace the content of the return statement by this code snippet:
+      `<div
+      className="App"
+      style={{
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        height: "100vh",
+      }}
+    >
+  <Plot
+        data={[
+          {
+            x: [1, 2, 3, 4, 6, 8, 10, 12, 14, 16, 18],
+            y: [32, 37, 40.5, 43, 49, 54, 59, 63.5, 69.5, 73, 74],
+            mode: "lines",
+            type: "scatter",
+            line: {
+              color: "blue",
+              dash: "solid",
+              width: 5,
+            },
+          },
+          ]}
+        layout={{
+          xaxis: {
+            showline: true,
+            ticks: "",
+          },
+          yaxis: {
+            showline: true,
+            ticks: "",
+          },
+          width: 600,
+          height: 500,
+        }}
+      />
+    </div>
+`
+
+- [ ] Hover over the chart, an interactive menu will appear. Then click on "Download plot as a png".
+
+- [ ] Move the figure file to the chart-types folder and rename the file with the name "lines plot".
+
+- Repeat the process for other types of charts. The figure files will have names like "lines plot", "scatter plot", "lines+markers plot", "bar plot".
 
 - [ ] In the pages folder, create a UploadDataPage.js file.
 
@@ -46,29 +98,29 @@ so that I can click on the type I want.
 
 - [ ] Make a named import of StyledHeading from "../Component/Heading/Heading.styled".
 
-- [ ] Make a named import of chartarray from "../lib/listofcharttypes".
+- [ ] Make a named import of StyledUl2 from "../Components/Ul2/Ul2.styled".
 
-- [ ] Make a default import of styled from "styled-components".
+- [ ] Make a named import of StyledDiv2 from "../Components/Div2/Div2.styled".
+
+- [ ] Make a named import of chartarray from "../lib/listofcharttypes".
 
 - [ ] Declare a ListOfCharts function and export it by default.
 
-- [ ] Inside the function write a StyledDiv component which styles a div element using styled, with the display set to flex, the flex-direction set to row, the flex-wrap set to wrap and the justify-content set to space-around.
-
-- [ ] Inside the function write a StyledUl component which styles a ul element using styled, with the list-style-type set to none.
-
-- [ ] The function returns a fragment, and nested within, the StyledTitle component, several line breaks, the StyledHeading component, several line breaks, the StyledDiv component, and nested within is the StyledUl component.
+- [ ] The function returns a fragment, and nested within, the StyledTitle component, several line breaks, the StyledHeading component, several line breaks, the StyledDiv2 component, and nested within is the StyledUl2 component.
 
 - [ ] StyledTitle has for text "PLOTDATA".
 
 - [ ] StyledHeading has for text "Step 1: Decide what type of chart.".
 
-- [ ] Nest curly brackets within the StyledUl, where you use forEach over chartarray to render a li element.
+- [ ] Nest curly brackets within the StyledUl2, where you use forEach over chartarray to render a li element.
 
 - [ ] Within the li, nest the ChartItem component.
 
 - [ ] Give the key name as prop to ChartItem.
 
 - [ ] Go to the ChartItem.js file, and inside make a named import of useRouter from "next/router".
+
+- [ ] Install use-local-storage-state.
 
 - [ ] Make a default import of useLocalStorageState from "use-local-storage-state".
 
