@@ -3,12 +3,13 @@
 ## Value proposition
 
 As a user
-I want to see a homepage with an introduction to the website, and a "Get Started" button so that I can go start the plotting process on the next page.
+I want to see a homepage with an introduction to the website, a row of example images for different types of charts and a "Get Started" button so that I can go start the plotting process on the next page.
 
 ## Description
 
 - h1 header with name of website.
 - Paragraph to introduce the concept of the website.
+- List of example images for different types of charts.
 - h2 header to announce a list of the steps for the plotting process.
 - Unordered list containing these steps.
 - Paragraph to announce that a chart is generated.
@@ -27,8 +28,8 @@ I want to see a homepage with an introduction to the website, and a "Get Started
 - [ ] Go to styles.js and make a named import of createGlobalStyle from "styled-components".
 
 - [ ] Make a default export of createGlobalStyle, where you write the following styling properties:
-      _,
-      _::before,
+      \*,
+      \*::before,
       \*::after {
       box-sizing: border-box;
       }
@@ -56,9 +57,102 @@ I want to see a homepage with an introduction to the website, and a "Get Started
 
 - [ ] The function returns the createGlobalStyle component.
 
-- [ ] Create an "asset" folder and inside of it an "picture-examples" folder.
+- [ ] Create an "asset" folder and inside of it a "chart-examples" folder.
 
-- [ ]
+- [ ] In the browser go to the codesandbox website, log in, click on "Create a sandbox", then click on "React, then give the name chart-examples for the file.
+
+- [ ] In the dependencies menu, search and install these libraries: plotly.js 2.29.1 and react-plotly.js 2.6.0.
+
+- [ ] Go to the App.js file that was generated and open the preview. Make a default import of Plot from "react-plotly.js".
+
+- [ ] Replace the content of the return statement by this code snippet:
+      `<div
+      className="App"
+      style={{
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        height: "100vh",
+      }}
+    >
+  <Plot
+        data={[
+          {
+            x: [1, 2, 3, 4, 6, 8, 10, 12, 14, 16, 18],
+            y: [32, 37, 40.5, 43, 49, 54, 59, 63.5, 69.5, 73, 74],
+            mode: "lines",
+            type: "scatter",
+            name: "Boys",
+            line: {
+              color: "blue",
+              dash: "solid",
+              width: 5,
+            },
+          },
+           {
+            x: [1, 2, 3, 4, 6, 8, 10, 12, 14, 16, 18],
+            y: [30, 36, 39, 42, 48, 53, 58, 62, 67.5, 68, 68.5],
+            mode: "lines",
+            type: "scatter",
+            name: "Girls",
+            line: {
+              color: "red",
+              dash: "dash",
+              width: 5,
+            },
+           }, 
+          ]}
+        layout={{
+          title: {
+            text: "Growth Rate in Children",
+          },
+          legend: {
+            groupclick: "toggleitem",
+            itemclick: false,
+            itemdoubleclick: false,
+          },
+          xaxis: {
+            title: {
+              text: "Age (years)",
+            },
+            showgrid: true,
+            showline: true,
+            ticks: "outside",
+          },
+          yaxis: {
+            title: {
+              text: "Height (inches)",
+            },
+            showgrid: true,
+            showline: true,
+            ticks: "outside",
+          },
+          width: 600,
+          height: 500,
+        }}
+        config={{
+          displayModeBar: true,
+          modeBarButtonsToRemove: ["lasso2d", "select2d", "pan2d"],
+        }}
+      />
+    </div>
+`
+
+- [ ] Hover over the chart, an interactive menu will appear. Then click on "Download plot as a png".
+
+- [ ] Move the figure file to the chart-examples folder and rename the file with the name "lines plot example".
+
+- Repeat the process for other types of charts. The figure files will have names like "lines plot example", "scatter plot example", "lines+markers plot example", "bar plot example".
+
+- [ ] Create a lib folder.
+
+- [ ] Inside this folder create a listofchartexamples.js file.
+
+- [ ] Go to listofchartexamples.js and declare an array examplearray containing objects with the key "name".
+
+  - The name key has for value a string corresponding to the name of the picture contained in the chart-examples folder.
+
+- [ ] Make a named export of examplearray.
 
 - [ ] Create a Component folder.
 
@@ -142,7 +236,19 @@ I want to see a homepage with an introduction to the website, and a "Get Started
 
 - [ ] Make a named export of StyledUl2.
 
+- [ ] In the folder Component create a Img folder.
+
+- [ ] In the Img folder create a Img.styled.js file.
+
+- [ ] Go to Img.styled.js and make a default import of styled from "styled-components".
+
+- [ ] Write a StyledImg component which styles a img element using styled, with the flex-shrink set to 1.
+
+- [ ] Make a named export of StyledImg.
+
 - [ ] In the "pages" folder go to index.js, and make a named import of useRouter from "next/router".
+
+- [ ] Make a named import of examplearray from "../lib/listofchartexamples.js".
 
 - [ ] Make a named import of StyledButton from "../Component/Button/Button.styled".
 
@@ -160,6 +266,8 @@ I want to see a homepage with an introduction to the website, and a "Get Started
 
 - [ ] Make a named import of StyledDiv2 from "../Components/Div2/Div2.styled".
 
+- [ ] Make a named import of StyledImg from "../Components/Img/Img.styled.js".
+
 - [ ] Declare a Homepage function and export it by default.
 
 - [ ] Inside the function declare a constant router = useRouter();
@@ -172,9 +280,9 @@ I want to see a homepage with an introduction to the website, and a "Get Started
 
 - [ ] The first call to StyledParagraph has for text "With PLOTDATA you can use data to easily make customizable publication-quality charts, all without programming.".
 
-- [ ] Nest curly brackets within the StyledUl2, where you use forEach over chartarray to render a li element.
+- [ ] Nest curly brackets within the StyledUl2, where you use forEach over examplearray to render a li element.
 
-- [ ] Within the li, nest the ChartItem component.
+- [ ] Within the li, nest the StyledImg component which takes an src attribute set to the path of the associated picture, using the name prop.
 
 - [ ] StyledHeading has for text "Overview of the different steps".
 
