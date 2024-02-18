@@ -90,7 +90,11 @@ so that I can click on the type I want.
 
 - [ ] Inside the ChartItem folder create a ChartItem.js file.
 
-- Go to ListOfChartsPage.js and make a default import to the ChartItem component from "../Component/ChartItem.js".
+- Go to ListOfChartsPage.js and make a named import of useRouter from "next/router".
+
+- Make a named import of useState from "react".
+
+- [ ] Make a default import to the ChartItem component from "../Component/ChartItem.js".
 
 - [ ] Make a named import of StyledTitle from "../Components/Title/Title.styled".
 
@@ -100,27 +104,37 @@ so that I can click on the type I want.
 
 - [ ] Make a named import of StyledDiv2 from "../Components/Div2/Div2.styled".
 
+- [ ] Make a named import of StyledDiv from "../Components/Div/Div.styled".
+
+- [ ] Make a named import of StyledButton from "../Components/Button/Button.styled".
+
 - [ ] Make a named import of chartarray from "../lib/listofcharttypes.js".
 
 - [ ] Declare a ListOfCharts function and export it by default.
 
-- [ ] The function returns a fragment, and nested within, the StyledTitle component, several line breaks, the StyledHeading component, several line breaks, the StyledDiv2 component, and nested within is the StyledUl2 component.
+- [ ] Inside the function declare a state for the isSelected variable using useState. The initial value is a boolean set to false.
+
+- [ ] Declare a constant router = useRouter();
+
+- [ ] Write an handleClick function, which pushes using router to the UploadDataPage.js page.
+
+- [ ] The function returns a fragment, and nested within, the StyledTitle component, several line breaks, the StyledHeading component, several line breaks, the StyledDiv2 component and nested within is the StyledUl2 component, then several line breaks, finally the StyledDiv component and nested within the StyledButton component.
 
 - [ ] StyledTitle has for text "PLOTDATA".
 
 - [ ] StyledHeading has for text "Step 1: Decide what type of chart.".
 
+- [ ] The StyledButton of type "button" takes an onClick attribute which has handleClick as prop. The button has the disabled attribute set to !isSelected. The text of StyledButton is "Next".
+
 - [ ] Nest curly brackets within the StyledUl2, where you use forEach over chartarray to render a li element.
 
 - [ ] Within the li, nest the ChartItem component.
 
-- [ ] Give the key name as prop to ChartItem.
-
-- [ ] Go to the ChartItem.js file, and inside make a named import of useRouter from "next/router".
+- [ ] Give the key name and setIsSelected as props to ChartItem.
 
 - [ ] Install use-local-storage-state.
 
-- [ ] Make a default import of useLocalStorageState from "use-local-storage-state".
+- [ ] Go to the ChartItem.js file, and inside make a default import of useLocalStorageState from "use-local-storage-state".
 
 - [ ] Make a named import of StyledButton from "../Button/Button.styled".
 
@@ -132,15 +146,13 @@ so that I can click on the type I want.
 
 - [ ] Inside the function use a local storage state for the clickedChartType variable, with "" as default value.
 
-- [ ] Declare a constant router = useRouter().
-
 - [ ] Write an handleClick function, taking event as argument.
 
 - [ ] This function uses the setter setClickedChartType with the value event.target.value.
 
 - [ ] This function calls an alert function with the text `You chose "${clickedChartType}"`.
 
-- [ ] This function pushes using router to the UploadDataPage.js page.
+- [ ] This function uses the setter setIsSelected with the boolean value true.
 
 - [ ] The ChartItem function returns, within a fragment, the StyledButton component and the StyledImg component.
 
