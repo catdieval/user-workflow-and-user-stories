@@ -272,7 +272,7 @@ I want to see a homepage with an introduction to the website, a row of example i
 
 - [ ] Inside the function declare a constant router = useRouter();
 
-- [ ] Write an handleClick function, which pushes using router to the ListOfChartsPage.js page.
+- [ ] Write an handleClick function, which pushes using router to the ListOfChartsPage UploadDataPage.js page.
 
 - [ ] The Homepage function returns, nested in a fragment, the StyledTitle component, several line breaks, the StyledParagraph component, several line breaks, the StyledDiv2 component and nested within the StyledUl2 component, the StyledHeading component, the StyledUl component, the StyledParagraph component, the StyledUl component, several line breaks and finally the StyledDiv component and nested within the StyledButton component. This div element is necessary in order to center the button horizontally.
 
