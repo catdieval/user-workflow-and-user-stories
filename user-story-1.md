@@ -112,8 +112,6 @@ so that I can click on the type I want.
 
 - [ ] Make a named import of StyledHeading from "../Component/Heading/Heading.styled".
 
-- [ ] Make a named import of StyledUl2 from "../Components/Ul2/Ul2.styled".
-
 - [ ] Make a named import of StyledDiv2 from "../Components/Div2/Div2.styled".
 
 - [ ] Make a named import of StyledDiv from "../Components/Div/Div.styled".
@@ -130,7 +128,7 @@ so that I can click on the type I want.
 
 - [ ] Write an handleClick function, which pushes using router to the UploadDataPage.js page.
 
-- [ ] The function returns a fragment, and nested within, the StyledTitle component, several line breaks, the StyledHeading component, several line breaks, the StyledDiv2 component and nested within is the StyledUl2 component, then several line breaks, finally the StyledDiv component and nested within the StyledButton component.
+- [ ] The function returns a fragment, and nested within, the StyledTitle component, several line breaks, the StyledHeading component, several line breaks, the StyledDiv2 component, several line breaks, finally the StyledDiv component and nested within the StyledButton component.
 
 - [ ] StyledTitle has for text "PLOTDATA".
 
@@ -138,9 +136,7 @@ so that I can click on the type I want.
 
 - [ ] The StyledButton of type "button" takes an onClick attribute which has handleClick as prop. The button has the disabled attribute set to !isSelected. The text of StyledButton is "Next".
 
-- [ ] Nest curly brackets within the StyledUl2, where you use forEach over chartarray to render a li element.
-
-- [ ] Within the li, nest the ChartItem component.
+- [ ] Nest curly brackets within the StyledDiv2, where you use forEach over chartarray to render the ChartItem component.
 
 - [ ] Give the key name and setIsSelected as props to ChartItem.
 
