@@ -23,6 +23,8 @@ I want to see a homepage with an introduction to the website, a row of example i
 
 ## Tasks
 
+### Creation of global styling file
+
 - [ ] Create a styles.js file.
 
 - [ ] Go to styles.js and make a named import of createGlobalStyle from "styled-components".
@@ -43,7 +45,9 @@ I want to see a homepage with an introduction to the website, a row of example i
   max-width: 50rem;
   }
 
-- [ ] Create a pages folder.
+### Creation of the pages folder and files inside
+
+- [ ] Create a "pages" folder.
 
 - [ ] Inside this folder create a index.js file.
 
@@ -51,13 +55,17 @@ I want to see a homepage with an introduction to the website, a row of example i
 
 - [ ] Inside this folder create a \_app.js file.
 
+### \_app.js file
+
 - [ ] Go to the \_app.js file and make a default import of createGlobalStyle from "../styles".
 
 - [ ] Declare a function App and export it by default.
 
 - [ ] The function returns the createGlobalStyle component.
 
-- [ ] Create an "asset" folder and inside of it a "chart-examples" folder.
+### Creation of the assets folder and chart-examples subfolder, and creation of images
+
+- [ ] Create an "assets" folder and inside of it a "chart-examples" folder.
 
 - [ ] In the browser go to the codesandbox website, log in, click on "Create a sandbox", then click on "React, then give the name chart-examples for the file.
 
@@ -144,6 +152,8 @@ I want to see a homepage with an introduction to the website, a row of example i
 
 - Repeat the process for other types of charts. The figure files will have names like "lines plot example", "scatter plot example", "lines+markers plot example", "bar plot example".
 
+### Creation of lib folder and listofchartexamples.js file inside
+
 - [ ] Create a lib folder.
 
 - [ ] Inside this folder create a listofchartexamples.js file.
@@ -153,6 +163,8 @@ I want to see a homepage with an introduction to the website, a row of example i
   - The name key has for value a string corresponding to the name of the picture contained in the chart-examples folder.
 
 - [ ] Make a named export of examplearray.
+
+### Creation of Components folder and subfolders of components inside
 
 - [ ] Create a Component folder.
 
@@ -245,6 +257,8 @@ I want to see a homepage with an introduction to the website, a row of example i
 - [ ] Write a StyledImg component which styles a img element using styled, with the flex-shrink set to 1.
 
 - [ ] Make a named export of StyledImg.
+
+### index.js file
 
 - [ ] In the "pages" folder go to index.js, and make a named import of useRouter from "next/router".
 
