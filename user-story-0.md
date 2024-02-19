@@ -132,6 +132,7 @@ I want to see a homepage with an introduction to the website, a row of example i
               text: "Height (inches)",
             },
             showgrid: true,
+            showline: true,
             ticks: "outside",
           },
           width: 600,
@@ -139,7 +140,7 @@ I want to see a homepage with an introduction to the website, a row of example i
         }}
         config={{
           displayModeBar: true,
-          modeBarButtonsToRemove: ["lasso2d", "select2d", "pan2d"],
+          modeBarButtonsToRemove: ["lasso2d", "select2d"],
         }}
       />
     </div>
