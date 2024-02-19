@@ -11,14 +11,18 @@ so that I can click on the type I want.
 - h1 heading with "PLOTDATA".
 - h2 heading with "Step 1: Decide what type of chart.".
 - List (without bullet points) of images corresponding to examples of each type of chart, with corresponding deepskyblue button named after the type of chart, displayed in a row with possibility of wrapping.
+- Button with text "Next".
 - The elements do not extend to each end of the page, but are centered in the middle.
 
 ## Acceptance criteria
 
-- [ ] Clicking on a button saves the text of the button to a clickedChartType variable.
-- [ ] Clicking on a button brings the user to the page with the data upload.
+- [ ] Clicking on the button for a chart type shows an alert message to inform the user which type of chart was selected.
+- [ ] The "Next" button stays disabled until the user has clicked on the button for a chart type.
+- [ ] Clicking on the "Next" button brings the user to the page with the data upload.
 
 ## Tasks
+
+### Creation of chart-types subfolder in the assets folder and creation of images
 
 - [ ] Inside the assets folder create a chart-types folder.
 
@@ -74,6 +78,8 @@ so that I can click on the type I want.
 
 - Repeat the process for other types of charts. The figure files will have names like "lines plot", "scatter plot", "lines+markers plot", "bar plot".
 
+### Creation of listofcharttypes.js file inside the lib folder
+
 - [ ] Inside the lib folder create a listofcharttypes.js file.
 
 - [ ] Go to listofcharttypes.js and declare an array chartarray containing objects with the keys "type", "mode" and "name".
@@ -84,11 +90,17 @@ so that I can click on the type I want.
 
 - [ ] Make a named export of chartarray.
 
+### Creation of UploadDataPage.js in the pages folder
+
 - [ ] In the pages folder, create a UploadDataPage.js file.
+
+### Creation of a ChartItem subfolder in the Components folder
 
 - [ ] Inside the Component folder create a ChartItem folder.
 
 - [ ] Inside the ChartItem folder create a ChartItem.js file.
+
+### ListOfChartsPage.js file
 
 - Go to ListOfChartsPage.js and make a named import of useRouter from "next/router".
 
@@ -131,6 +143,8 @@ so that I can click on the type I want.
 - [ ] Within the li, nest the ChartItem component.
 
 - [ ] Give the key name and setIsSelected as props to ChartItem.
+
+### ChartItem.js file
 
 - [ ] Install use-local-storage-state.
 
