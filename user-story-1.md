@@ -62,7 +62,6 @@ so that I can click on the type I want.
             ticks: "",
           },
           yaxis: {
-            showline: true,
             ticks: "",
           },
           width: 600,
