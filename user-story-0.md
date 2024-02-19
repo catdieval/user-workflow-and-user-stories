@@ -234,19 +234,9 @@ I want to see a homepage with an introduction to the website, a row of example i
 
 - [ ] Go to Div2.styled.js and make a default import of styled from "styled-components".
 
-- [ ] Write a StyledDiv2 component which styles a div element using styled, with the display set to flex, the flex-direction set to row, the flex-wrap set to wrap and the justify-content set to space-around..
+- [ ] Write a StyledDiv2 component which styles a div element using styled, with the display set to flex, the flex-direction set to row, the flex-wrap set to wrap and the justify-content set to space-around.
 
 - [ ] Make a named export of StyledDiv2.
-
-- [ ] In the folder Component create a Ul2 folder.
-
-- [ ] In the Ul2 folder create a Ul2.styled.js file.
-
-- [ ] Go to Ul2.styled.js and make a default import of styled from "styled-components".
-
-- [ ] Write a StyledUl2 component which styles a ul element using styled, with the list-style-type set to none.
-
-- [ ] Make a named export of StyledUl2.
 
 - [ ] In the folder Component create a Img folder.
 
@@ -276,8 +266,6 @@ I want to see a homepage with an introduction to the website, a row of example i
 
 - [ ] Make a named import of StyledDiv from "../Components/Div/Div.styled".
 
-- [ ] Make a named import of StyledUl2 from "../Components/Ul2/Ul2.styled".
-
 - [ ] Make a named import of StyledDiv2 from "../Components/Div2/Div2.styled".
 
 - [ ] Make a named import of StyledImg from "../Components/Img/Img.styled.js".
@@ -288,15 +276,13 @@ I want to see a homepage with an introduction to the website, a row of example i
 
 - [ ] Write an handleClick function, which pushes using router to the ListOfChartsPage UploadDataPage.js page.
 
-- [ ] The Homepage function returns, nested in a fragment, the StyledTitle component, several line breaks, the StyledParagraph component, several line breaks, the StyledDiv2 component and nested within the StyledUl2 component, the StyledHeading component, the StyledUl component, the StyledParagraph component, the StyledUl component, several line breaks and finally the StyledDiv component and nested within the StyledButton component. This div element is necessary in order to center the button horizontally.
+- [ ] The Homepage function returns, nested in a fragment, the StyledTitle component, several line breaks, the StyledParagraph component, several line breaks, the StyledDiv2 component, the StyledHeading component, the StyledUl component, the StyledParagraph component, the StyledUl component, several line breaks and finally the StyledDiv component and nested within the StyledButton component. This div element is necessary in order to center the button horizontally.
 
 - [ ] StyledTitle has for text "PLOTDATA".
 
 - [ ] The first call to StyledParagraph has for text "With PLOTDATA you can use data to easily make customizable publication-quality charts, all without programming.".
 
-- [ ] Nest curly brackets within the StyledUl2, where you use forEach over examplearray to render a li element.
-
-- [ ] Within the li, nest the StyledImg component which takes an src attribute set to the path of the associated picture, using the name prop.
+- [ ] Nest curly brackets within the StyledDiv2, where you use forEach over examplearray to render the StyledImg component. StyledImg takes an src attribute set to the path of the associated picture, using the name prop.
 
 - [ ] StyledHeading has for text "Overview of the different steps".
 
