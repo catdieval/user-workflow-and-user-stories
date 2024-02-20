@@ -15,6 +15,8 @@ So that I can finally generate a plot.
 - paragraph with note to explain what to do when there are missing values
 - a button with a text "Approve this file" appears after successful upload
 
+![wireframe Upload](/assets/plotdata-wireframe%20-1.png)
+
 ## Acceptance criteria
 
 - [ ] When the user clicks on the upload button then an upload window opens where the user can select a file with a csv extension
