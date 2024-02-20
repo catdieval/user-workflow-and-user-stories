@@ -1,16 +1,19 @@
 # Minimal Viable Product
 
-## Selecting basic charts
-
-- Users can choose from a list of chart types (e.g. line, scatter, bar).
-
 ## Uploading data
 
 - Users can upload data files in CSV format.
 
-## Customizing charts
+## Selecting basic charts
+
+- Users can choose from a list of chart types (e.g. line, scatter, bar).
+
+## Selecting which data to plot
 
 - Users can select which data columns to visualize.
+
+## Customizing charts
+
 - Users can give a title and labels to the axes.
 - Users can assign plotting properties for the data, such as line color or marker symbol.
 
