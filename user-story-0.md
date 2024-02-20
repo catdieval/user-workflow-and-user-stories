@@ -45,13 +45,17 @@ I want to see a homepage with an introduction to the website, a row of example i
   max-width: 50rem;
   }
 
-### Creation of the pages folder and files inside
+### Creation of the pages folder and some files inside
 
 - [ ] Create a "pages" folder.
 
 - [ ] Inside this folder create a index.js file.
 
 - [ ] Inside this folder create a ListOfChartsPage.js file.
+
+- [ ] In this folder, create a UploadDataPage.js file.
+
+- [ ] In this folder create a DataSelectionPage.js file.
 
 - [ ] Inside this folder create a \_app.js file.
 
@@ -274,7 +278,7 @@ I want to see a homepage with an introduction to the website, a row of example i
 
 - [ ] Inside the function declare a constant router = useRouter();
 
-- [ ] Write an handleClick function, which pushes using router to the ListOfChartsPage UploadDataPage.js page.
+- [ ] Write an handleClick function, which pushes using router to the UploadDataPage.js page.
 
 - [ ] The Homepage function returns, nested in a fragment, the StyledTitle component, several line breaks, the StyledParagraph component, several line breaks, the StyledDiv2 component, the StyledHeading component, the StyledUl component, the StyledParagraph component, the StyledUl component, several line breaks and finally the StyledDiv component and nested within the StyledButton component. This div element is necessary in order to center the button horizontally.
 
@@ -288,8 +292,8 @@ I want to see a homepage with an introduction to the website, a row of example i
 
 - [ ] The first call to StyledUl has li elements nested with the following text:
 
-  - Step 1: Decide what type of graph.
-  - Step 2: Upload a CSV file to get the data.
+  - Step 1: Upload a CSV file to get the data.
+  - Step 2: Decide what type of graph.
   - Step 3: Choose from the columns in the file which variables to plot.
   - Step 4: Give labels to the axes (and to the legend).
   - Step 5: Give a title to the chart.
