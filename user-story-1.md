@@ -90,10 +90,6 @@ so that I can click on the type I want.
 
 - [ ] Make a named export of chartarray.
 
-### Creation of UploadDataPage.js in the pages folder
-
-- [ ] In the pages folder, create a UploadDataPage.js file.
-
 ### Creation of a ChartItem subfolder in the Components folder
 
 - [ ] Inside the Component folder create a ChartItem folder.
@@ -126,13 +122,13 @@ so that I can click on the type I want.
 
 - [ ] Declare a constant router = useRouter();
 
-- [ ] Write an handleClick function, which pushes using router to the UploadDataPage.js page.
+- [ ] Write an handleClick function, which pushes using router to the DataSelectionPage.js page.
 
 - [ ] The function returns a fragment, and nested within, the StyledTitle component, several line breaks, the StyledHeading component, several line breaks, the StyledDiv2 component, several line breaks, finally the StyledDiv component and nested within the StyledButton component.
 
 - [ ] StyledTitle has for text "PLOTDATA".
 
-- [ ] StyledHeading has for text "Step 1: Decide what type of chart.".
+- [ ] StyledHeading has for text "Step 2: Decide what type of chart.".
 
 - [ ] The StyledButton of type "button" takes an onClick attribute which has handleClick as prop. The button has the disabled attribute set to !isSelected. The text of StyledButton is "Next".
 
