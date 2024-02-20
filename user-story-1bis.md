@@ -24,11 +24,16 @@ So that I can finally generate a plot.
 ## Tasks
 
 - [ ] create a new feature branch - upload-data
+- [ ] create a Components folder
 - [ ] create a Title Component with index.js file which returns h1 Heading with the Text "Plotdata"
 - [ ] import styled from styled-components and style the heading with text-align set to center
-- [ ] create a Components folder with a Component UploadData and inside create an index.js file
-- [ ] the Component returns
+- [ ] create LayoutComponent to return Head & Main elements and the TitleComponent.
+- [ ] render LayoutComponent to \_app.js
+- [ ] create a ButtonComponent which returns a button element
 - [ ]
+- [ ] add Component UploadData and inside create an index.js file
+- [ ] the Component returns an input & label elements which wrap the ButtonComponent
+- [ ] implement the logic that handle the upload of a file
 - [ ]
 - [ ]
 - [ ]
