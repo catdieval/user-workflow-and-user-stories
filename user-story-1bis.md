@@ -14,17 +14,18 @@ So that I can finally generate a plot.
 - A button with a text "Choose a file" which starts the upload process and the default text "no file chosen" is displayed next to the button
 - Once the file is uploaded the filename is displayed
 - A button with text "Submit" which is disabled by default and becomes enabled once the upload is successful
+- The elements do not extend to each end of the page but are centered in the middle.
 
 ![wireframe Upload](/assets/plotdata-Step1.png)
 
 ## Acceptance criteria
 
 - [ ] When the user clicks on the "Choose a file" button then an upload window opens where the user can select a file with a csv extension.
-- [ ] when the user clicks on the "Submit" button the file will be converted to an array of objects
+- [ ] When the user clicks on the "Submit" button the file will be converted to an array of objects.
 
 ## Tasks
 
-- [ ] Create a new feature branch - upload-data
+- [ ] Create a new feature branch - upload-data.
 
 ### styles.js file
 
@@ -55,7 +56,7 @@ So that I can finally generate a plot.
 - [ ] Create a Title component folder with an index.js file.
 - [ ] In the index.js file export by default a Title function which returns a StyledH1 element with the Text "PlotData".
 - [ ] In the index.js file import styled from "styled-components".
-- StyledH1 styles the h1 element using styled with text-align set to center
+- [ ] StyledH1 styles the h1 element using styled with text-align set to center
 
 ### Layout component
 
@@ -111,8 +112,8 @@ So that I can finally generate a plot.
 - [ ] Make a default import of Paragraph from "../Paragraph".
 - [ ] Make a default import of Div from "../Div".
 - [ ] The function returns, within a fragment, the Heading component, the Paragraph component, an input element, the Button component nested inside the Div component and again the Button component nested inside the Div component.
-- The Heading component has for text "Step 1: Upload a CSV file to get the data.".
-- The Paragraph component has for text notes about the header of the file, the delimiter in the file and missing values.
+- [ ] The Heading component has for text "Step 1: Upload a CSV file to get the data.".
+- [ ] The Paragraph component has for text notes about the header of the file, the delimiter in the file and missing values.
 - [ ] implement the logic that handle the upload of a file
 - [ ] import useState from react
 - [ ]
