@@ -36,9 +36,9 @@ So that I can finally generate a plot.
 - [ ] add Component UploadData and inside create an index.js file
 - [ ] the Component returns an input element which wrap the ButtonComponent
 - [ ] implement the logic that handle the upload of a file
-- [ ] create a DeleteButton Component to return a button to remove the uploaded file and a <p> element with an info text
+- [ ] create a PreviewDeleteButton Component to return a <div> with list of the uploaded file, a button to remove the uploaded file and a <p> element with an info text
 - [ ] implement logic for the delete function
 - [ ] import useState from react
-- [ ] create a boolean isUploaded to toggle between UploadData & DeleteButton components
-- [ ] create a Navigation to render the Nest button???
+- [ ] create a boolean isUploaded to toggle between UploadData & PreviewDeleteButton components
+- [ ] create a Navigation to render the Next button???
 - [ ]
