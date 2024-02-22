@@ -111,7 +111,7 @@ So that I can finally generate a plot.
 - [ ] Make a default import of Heading from "../Heading".
 - [ ] Make a default import of Paragraph from "../Paragraph".
 - [ ] Make a default import of Div from "../Div".
-- [ ] The function returns, within a fragment, the Heading component, the Paragraph component, an input element, the Button component nested inside the Div component and again the Button component nested inside the Div component.
+- [ ] The function returns, within a fragment, the Heading component, the Paragraph component, an input element and the Button component nested inside the Div component.
 - [ ] The Heading component has for text "Step 1: Upload a CSV file to get the data.".
 - [ ] The Paragraph component has for text notes about the header of the file, the delimiter in the file and missing values.
 - [ ] implement the logic that handle the upload of a file
