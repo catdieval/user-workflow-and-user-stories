@@ -47,16 +47,28 @@ So that I can finally generate a plot.
   max-width: 50rem;
   }
 
+### assets folder
+
+- [ ] Create an asset folder and put inside the image for the logo of the website.
+
 ### Components folder and subfolders
 
 - [ ] Create a Components folder
 
+### Div component (centered)
+
+- [ ] Create a Div component folder with an index.js file.
+- [ ] In the index.js file export by default a Div function which returns a StyledDiv element.
+- [ ] Import styled from "styled-components".
+- [ ] The StyledDiv styles the div using styled with text-align set to center.
+
 ### Title component
 
 - [ ] Create a Title component folder with an index.js file.
-- [ ] In the index.js file export by default a Title function which returns a StyledH1 element with the Text "PlotData".
+- [ ] In the index.js file export by default a Title function which returns the StyledDiv component and nested within an img element.
 - [ ] In the index.js file import styled from "styled-components".
-- [ ] StyledH1 styles the h1 element using styled with text-align set to center
+- [ ] Make a default import of Div from "/Div".
+- [ ] Give to the img element a src attribute set to the path of the logo image.
 
 ### Layout component
 
@@ -96,13 +108,6 @@ So that I can finally generate a plot.
 - [ ] In the index.js file export by default a Paragraph function which returns a StyledP element.
 - [ ] Import styled from "styled-components".
 - [ ] The StyledP styles the p using styled with text-align set to center.
-
-### Div component (centered)
-
-- [ ] Create a Div component folder with an index.js file.
-- [ ] In the index.js file export by default a Div function which returns a StyledDiv element.
-- [ ] Import styled from "styled-components".
-- [ ] The StyledDiv styles the div using styled with text-align set to center.
 
 ### UploadData component
 
