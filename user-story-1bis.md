@@ -8,15 +8,16 @@ So that I can finally generate a plot.
 
 ## Description
 
-- Title at the top with the name of the website
-- Heading which explains the step one of the process
+- Title at the top with the name of the website and a logo.
+- Heading which explains the first step of the process
 - Paragraph with note to explain that the file should be comma-delimited and have a period(.) for the decimal separator for numbers, that the file should have a header and what to do when there are missing values.
-- A button with a text "Choose a file" which starts the upload process and the default text "no file chosen" is displayed next to the button
-- Once the file is uploaded the filename is displayed
+- A button with a text "Choose a file" which starts the upload process and the default text "no file chosen" is displayed below the button
+- Once the file is uploaded the filename gets displayed
 - A button with text "Submit" which is disabled by default and becomes enabled once the upload is successful
+- A button with text "Next" which goes to the next step.
 - The elements do not extend to each end of the page but are centered in the middle.
 
-![wireframe Upload](/assets/plotdata-Step1.png)
+![wireframe Upload](/assets/MVP-step1.png)
 
 ## Acceptance criteria
 
@@ -55,10 +56,10 @@ So that I can finally generate a plot.
 
 - [ ] Create a Components folder
 
-### Div component (centered)
+### CenteredDiv component
 
-- [ ] Create a Div component folder with an index.js file.
-- [ ] In the index.js file export by default a Div function which returns a StyledDiv element.
+- [ ] Create a CenteredDiv component folder with an index.js file.
+- [ ] In the index.js file export by default a CenteredDiv function which returns a StyledDiv element.
 - [ ] Import styled from "styled-components".
 - [ ] The StyledDiv styles the div using styled with text-align set to center.
 
@@ -115,8 +116,8 @@ So that I can finally generate a plot.
 - [ ] In the index.js file export by default an UploadData function.
 - [ ] Make a default import of Heading from "../Heading".
 - [ ] Make a default import of Paragraph from "../Paragraph".
-- [ ] Make a default import of Div from "../Div".
-- [ ] The function returns, within a fragment, the Heading component, the Paragraph component, an input element and the Button component nested inside the Div component.
+- [ ] Make a default import of CenteredDiv from "../CenteredDiv".
+- [ ] The function returns, within a fragment, the Heading component, the Paragraph component, an input element and the Button component nested inside the CenteredDiv component.
 - [ ] The Heading component has for text "Step 1: Upload a CSV file to get the data.".
 - [ ] The Paragraph component has for text notes about the header of the file, the delimiter in the file and missing values.
 - [ ] implement the logic that handle the upload of a file
