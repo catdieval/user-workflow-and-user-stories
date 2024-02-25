@@ -22,7 +22,7 @@ So that I can finally generate a plot.
 ## Acceptance criteria
 
 - [ ] When the user clicks on the "Choose a file" button then an upload window opens where the user can select a file with a csv extension.
-- [ ] When the user clicks on the "Submit" button then the content of the file gets converted to an array of objects.
+- [ ] When the user clicks on the "Submit" button then the content of the file gets converted to an array of objects and an alert gets displayed with the text "File processed successfuly".
 - [ ] When the user clicks on the "Next" button then what the user sees on the page gets replaced by a heading explaining the second step.
 
 ## Tasks
@@ -127,6 +127,8 @@ So that I can finally generate a plot.
 - [ ] Make a default import of Button from "../Button".
 - [ ] In the function return replace the div element by the CenteredDiv component.
 - [ ] In the function return replace the button element by the Button component. Remove the className attribute.
+
+### ListOfCharts component
 
 ### UploadData component
 
