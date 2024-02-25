@@ -22,7 +22,8 @@ So that I can finally generate a plot.
 ## Acceptance criteria
 
 - [ ] When the user clicks on the "Choose a file" button then an upload window opens where the user can select a file with a csv extension.
-- [ ] When the user clicks on the "Submit" button the file will be converted to an array of objects.
+- [ ] When the user clicks on the "Submit" button then the content of the file gets converted to an array of objects.
+- [ ] When the user clicks on the "Next" button then what the user sees on the page gets replaced by a heading explaining the second step.
 
 ## Tasks
 
@@ -94,7 +95,14 @@ So that I can finally generate a plot.
 - [ ] Create a Button component folder with an index.js file.
 - [ ] In the index.js file export by default a Button function which returns a StyledButton element.
 - [ ] Import styled from "styled-components".
-- [ ] The StyledButton styles the button using styled with a color set to deepskyblue.
+- [ ] The StyledButton styles the button using styled with color set to deepskyblue, padding set to 10px, cursor set to pointer, font-size set to 16px and font-weight set to bold.
+
+### InputTypeSubmit component
+
+- [ ] Create a InputTypeSubmit component with an index.js file.
+- [ ] In the index.js file export by default a InputTypeSubmit function which returns a StyledInputTypeSubmit element.
+- [ ] Import styled from "styled-components".
+- [ ] The StyledInputTypeSubmit styles the input[type="submit"] using styled with color set to deepskyblue, padding set to 10px, cursor set to pointer, font-size set to 16px and font-weight set to bold.
 
 ### Heading component
 
@@ -110,6 +118,16 @@ So that I can finally generate a plot.
 - [ ] Import styled from "styled-components".
 - [ ] The StyledP styles the p using styled with text-align set to center.
 
+### FileUploader component
+
+- [ ] Create a FileUploader component folder with an index.js file.
+- [ ] In the index.js file use the logic from the FileUploader.js file in https://codesandbox.io/p/sandbox/test-upload-conversion-csv-4-cfd2zh?file=%2Fsrc%2FFileUploader.js%3A1%2C1.
+- [ ] Remove the import "./styles.css";
+- [ ] Make a default import of CenteredDiv from "../CenteredDiv".
+- [ ] Make a default import of Button from "../Button".
+- [ ] In the function return replace the div element by the CenteredDiv component.
+- [ ] In the function return replace the button element by the Button component. Remove the className attribute.
+
 ### UploadData component
 
 - [ ] Add a UploadData component folder and inside create an index.js file.
@@ -117,9 +135,16 @@ So that I can finally generate a plot.
 - [ ] Make a default import of Heading from "../Heading".
 - [ ] Make a default import of Paragraph from "../Paragraph".
 - [ ] Make a default import of CenteredDiv from "../CenteredDiv".
-- [ ] The function returns, within a fragment, the Heading component, the Paragraph component, an input element and the Button component nested inside the CenteredDiv component.
+- [ ] Make a default import of Button from ".../Button".
+- [ ] Make a default import of InputTypeSubmit from "../InputTypeSubmit".
+- [ ] Make a named import of FileUploader from "../FileUploader".
+- [ ] The function returns, within a fragment, the Heading component, the Paragraph component, a form element and the Button component.
 - [ ] The Heading component has for text "Step 1: Upload a CSV file to get the data.".
 - [ ] The Paragraph component has for text notes about the header of the file, the delimiter in the file and missing values.
+- [ ] The Button component has for text "Next".
+- [ ] Inside the form element are nested the FileUploader component and the CenteredDiv component.
+- [ ] Inside the CenteredDiv component is nested the InputTypeSubmit component.
+- [ ] The InputTypeSubmit component takes "Submit" for the value attribute.
 - [ ] implement the logic that handle the upload of a file
 - [ ] import useState from react
 - [ ]
