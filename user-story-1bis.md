@@ -21,7 +21,7 @@ So that I can finally generate a plot.
 - A button with text "Submit" which is disabled by default and becomes enabled once the upload is successful.
 - The elements do not extend to each end of the page but are centered in the middle.
 
-![wireframe Upload](/assets/Wireframe-User-story-1bis.png)
+![wireframe Upload](/assets/Wireframe-User-Story-1bis.png)
 
 ## Acceptance criteria
 
