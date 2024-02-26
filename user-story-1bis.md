@@ -10,20 +10,23 @@ So that I can finally generate a plot.
 
 - Title at the top with the name of the website and a logo.
 - Heading which explains the first step of the process
-- Paragraph with note to explain that the file should be comma-delimited and have a period(.) for the decimal separator for numbers, that the file should have a header and what to do when there are missing values.
+- Paragraph with text "Note: the file should have a
+  header.
+  Note: the file should be comma-delimited and the decimal
+  separator for numbers should be a period (.).
+  Note: if the file contains missing values, then replace
+  these values in the file by null.".
 - A button with a text "Choose a file" which starts the upload process and the default text "no file chosen" is displayed below the button
 - Once the file is uploaded the filename gets displayed
 - A button with text "Submit" which is disabled by default and becomes enabled once the upload is successful
-- A button with text "Next" which goes to the next step.
 - The elements do not extend to each end of the page but are centered in the middle.
 
-![wireframe Upload](/assets/MVP-step1.png)
+![wireframe Upload](/assets/Wireframe-User-story-1bis.png)
 
 ## Acceptance criteria
 
 - [ ] When the user clicks on the "Choose a file" button then an upload window opens where the user can select a file with a csv extension.
 - [ ] When the user clicks on the "Submit" button then the content of the file gets converted to an array of objects and an alert gets displayed with the text "File processed successfuly".
-- [ ] When the user clicks on the "Next" button then what the user sees on the page gets replaced by a heading explaining the second step.
 
 ## Tasks
 
@@ -95,14 +98,14 @@ So that I can finally generate a plot.
 - [ ] Create a Button component folder with an index.js file.
 - [ ] In the index.js file export by default a Button function which returns a StyledButton element.
 - [ ] Import styled from "styled-components".
-- [ ] The StyledButton styles the button using styled with color set to deepskyblue, padding set to 10px, cursor set to pointer, font-size set to 16px and font-weight set to bold.
+- [ ] The StyledButton styles the button using styled with color set to # 1f77b4, padding set to 10px, cursor set to pointer, font-size set to 16px, color to white and font-weight set to bold.
 
 ### InputTypeSubmit component
 
 - [ ] Create a InputTypeSubmit component with an index.js file.
 - [ ] In the index.js file export by default a InputTypeSubmit function which returns a StyledInputTypeSubmit element.
 - [ ] Import styled from "styled-components".
-- [ ] The StyledInputTypeSubmit styles the input[type="submit"] using styled with color set to deepskyblue, padding set to 10px, cursor set to pointer, font-size set to 16px and font-weight set to bold.
+- [ ] The StyledInputTypeSubmit styles the input[type="submit"] using styled with color set to # 1f77b4, padding set to 10px, cursor set to pointer, font-size set to 16px, color set to white and font-weight set to bold.
 
 ### Heading component
 
@@ -128,7 +131,10 @@ So that I can finally generate a plot.
 - [ ] In the function return replace the div element by the CenteredDiv component.
 - [ ] In the function return replace the button element by the Button component. Remove the className attribute.
 
-### ListOfCharts component
+### CorrectArrays component
+
+- [ ] Create a CorrectArrays component folder with an index.js file.
+- [ ] In the index.js file use the logic from the CorrectArrays.js file in https://codesandbox.io/p/sandbox/test-upload-conversion-csv-4-cfd2zh?file=%2Fsrc%2FCorrectArrays.js%3A5%2C1.
 
 ### UploadData component
 
@@ -137,17 +143,50 @@ So that I can finally generate a plot.
 - [ ] Make a default import of Heading from "../Heading".
 - [ ] Make a default import of Paragraph from "../Paragraph".
 - [ ] Make a default import of CenteredDiv from "../CenteredDiv".
-- [ ] Make a default import of Button from ".../Button".
 - [ ] Make a default import of InputTypeSubmit from "../InputTypeSubmit".
 - [ ] Make a named import of FileUploader from "../FileUploader".
-- [ ] The function returns, within a fragment, the Heading component, the Paragraph component, a form element and the Button component.
+- [ ] Make a default import of CorrectArrays from "../CorrectArrays".
+- [ ] Make a named import of useState from "react".
+- [ ] Make a default import of useLocalStorageState from "use-local-storage-state".
+- [ ] Declare a state for the variable keynames using useLocalStorageState with a default value set to []. This will contain the names of the columns in the CSV file.
+- [ ] Declare a state for the variable vals using useLocalStorageState with a default value set to []. This will contain the array of objects obtained from the conversion of the CSV file.
+- [ ] Declare a state for the variable fileObj using useState with an initial value set to {}. This will contain the object representing the uploaded file.
+- [ ] Declare a state for the variable isUploaded using useState with an initial value set to false. This variable will contain the status about the upload and will serve the enable or disable the InputTypeSubmit component.
+- [ ] Declare a handleFile function taking file as argument. The function sets the setFileObj to file and sets the setIsUploaded to true.
+- [ ] Declare a fileName variable set to fileObj.name.
+- [ ] Declare a handleSubmit function which takes event as argument and does event.preventDefault().
+- [ ] Declare a handleConversion function which does `
+      const reader = new FileReader();
+
+      reader.onload = function (e) {
+        const arrayOfObjects = convertCSVToArray(e.target.result, {
+          separator: ",",
+        });
+
+        // The output of the convertCSVToArray function needs further processing
+        const [keys, ...correctValues] = CorrectArrays(arrayOfObjects);
+
+        setKeynames(keys);
+        setVals(correctValues);
+        alert("File processed successfully");
+      };
+
+      reader.readAsText(fileObj);
+
+  `
+
+- [ ] The function returns, within a fragment, the Heading component, the Paragraph component and a form element.
 - [ ] The Heading component has for text "Step 1: Upload a CSV file to get the data.".
 - [ ] The Paragraph component has for text notes about the header of the file, the delimiter in the file and missing values.
-- [ ] The Button component has for text "Next".
 - [ ] Inside the form element are nested the FileUploader component and the CenteredDiv component.
+- [ ] The FileUploader component takes the handleFile as prop.
+- [ ] The form element takes handleSubmit as prop to the onSubmit attribute.
 - [ ] Inside the CenteredDiv component is nested the InputTypeSubmit component.
-- [ ] The InputTypeSubmit component takes "Submit" for the value attribute.
-- [ ] implement the logic that handle the upload of a file
-- [ ] import useState from react
-- [ ]
-- [ ]
+- [ ] The InputTypeSubmit component takes "Submit" for the value attribute and !isUploaded for the disable attribute and handleConversion as prop for the Onlick attribute.
+
+### index.js file
+
+The index.js file exports a Homepage function by default.
+
+- [ ] Import UploadData by default from "/Components/UploadData".
+- [ ] The function returns the UploadData component.
