@@ -62,7 +62,7 @@ So that I can finally generate a plot.
 - [ ] Create a Title component folder with an index.js file.
 - [ ] In the index.js file export by default a Title function which returns the StyledDiv component and nested within an img element.
 - [ ] In the index.js filemake a default import of styled from "styled-components".
-- [ ] Make a default import of CenteredDiv from "/CenteredDiv".
+- [ ] Make a default import of CenteredDiv from "../CenteredDiv".
 - [ ] Give to the img element a src attribute set to the path of the logo image.
 
 ### Layout component
