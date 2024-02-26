@@ -1,4 +1,4 @@
-## Title
+# Upload a CSV file and convert it to an array of objects
 
 ## Value proposition
 
