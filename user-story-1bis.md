@@ -44,6 +44,7 @@ So that I can finally generate a plot.
 ### assets folder
 
 - [ ] Create an asset folder and put inside the image for the logo of the website.
+      ![Logo](/assets/Plotdata-Logo.png)
 
 ### Components folder and subfolders
 
