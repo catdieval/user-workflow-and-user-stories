@@ -9,16 +9,16 @@ So that I can finally generate a plot.
 ## Description
 
 - Title at the top with the name of the website and a logo.
-- Heading which explains the first step of the process
+- Heading with text ""Step 1: Upload a CSV file to get the data.".
 - Paragraph with text "Note: the file should have a
   header.
   Note: the file should be comma-delimited and the decimal
   separator for numbers should be a period (.).
   Note: if the file contains missing values, then replace
   these values in the file by null.".
-- A button with a text "Choose a file" which starts the upload process and the default text "no file chosen" is displayed below the button
-- Once the file is uploaded the filename gets displayed
-- A button with text "Submit" which is disabled by default and becomes enabled once the upload is successful
+- A button with a text "Choose a file" which starts the upload process and the default text "no file chosen" is displayed below the .
+- Once the file is uploaded the filename gets displayed.
+- A button with text "Submit" which is disabled by default and becomes enabled once the upload is successful.
 - The elements do not extend to each end of the page but are centered in the middle.
 
 ![wireframe Upload](/assets/Wireframe-User-story-1bis.png)
@@ -34,23 +34,12 @@ So that I can finally generate a plot.
 
 ### styles.js file
 
-- [ ] Create a styles.js file.
-- [ ] In this file make a named import of CreateGlobalStyle from "styled-components".
-- [ ] Make a default export of createGlobalStyle, which you style as:
-      \*,
-      \*::before,
-      \*::after {
-      box-sizing: border-box;
-      }
-
-  body {
-  display: grid;
-  margin: auto;
-  font-family: system-ui;
-  place-items: center;
-  min-height: 100vh;
-  max-width: 50rem;
-  }
+- [ ] In the properties of body inside the createGlobalStyle, add:
+      display: grid;
+      margin: auto;
+      place-items: center;
+      min-height: 100vh;
+      max-width: 50rem;
 
 ### assets folder
 
@@ -65,14 +54,14 @@ So that I can finally generate a plot.
 - [ ] Create a CenteredDiv component folder with an index.js file.
 - [ ] In the index.js file export by default a CenteredDiv function which returns a StyledDiv element.
 - [ ] Import styled from "styled-components".
-- [ ] The StyledDiv styles the div using styled with text-align set to center.
+- [ ] The StyledDiv styles the div element using styled with text-align set to center.
 
 ### Title component
 
 - [ ] Create a Title component folder with an index.js file.
 - [ ] In the index.js file export by default a Title function which returns the StyledDiv component and nested within an img element.
-- [ ] In the index.js file import styled from "styled-components".
-- [ ] Make a default import of Div from "/Div". <!--Make a default import of CenteredDiv from "/CenteredDiv".-->
+- [ ] In the index.js filemake a default import of styled from "styled-components".
+- [ ] Make a default import of CenteredDiv from "/CenteredDiv".
 - [ ] Give to the img element a src attribute set to the path of the logo image.
 
 ### Layout component
@@ -82,44 +71,41 @@ So that I can finally generate a plot.
 - [ ] Import the Title component by default from "../Title".
 - [ ] Import Head by default from "next/head.js".
 - [ ] The Layout function takes children as prop.
-- [ ] Nest the children props within a main element.
+- [ ] Nest the children props within the main element.
 - [ ] Nest a title element within the Head element. The title has for text "PlotData".
 
-# \_app.js file
+### \_app.js file
 
 - [ ] In the \_app.js file import the Layout component from "../components/Layout".
-- [ ] Import GlobalStyle by default from "../styles.js";
-- [ ] Export by default an App function. It takes Component and pageProps as props.
-- [ ] The App function returns the Layout component, and nested within the GlobalStyle component and the Component element.
-- [ ] The Component element takes ...pageProps as prop.
+- [ ] The App function returns the Layout component, and nested within are the GlobalStyle component and the Component element.
 
 ### Button component
 
 - [ ] Create a Button component folder with an index.js file.
 - [ ] In the index.js file export by default a Button function which returns a StyledButton element.
-- [ ] Import styled from "styled-components".
-- [ ] The StyledButton styles the button using styled with color set to # 1f77b4, padding set to 10px, cursor set to pointer, font-size set to 16px, color to white and font-weight set to bold.
+- [ ] Make a default import of styled from "styled-components".
+- [ ] The StyledButton styles the button using styled with background-color set to # 1f77b4, padding set to 10px, cursor set to pointer, font-size set to 16px, color set to white and font-weight set to bold.
 
 ### InputTypeSubmit component
 
 - [ ] Create a InputTypeSubmit component with an index.js file.
 - [ ] In the index.js file export by default a InputTypeSubmit function which returns a StyledInputTypeSubmit element.
-- [ ] Import styled from "styled-components".
-- [ ] The StyledInputTypeSubmit styles the input[type="submit"] using styled with color set to # 1f77b4, padding set to 10px, cursor set to pointer, font-size set to 16px, color set to white and font-weight set to bold.
+- [ ] Make a default import of styled from "styled-components".
+- [ ] The StyledInputTypeSubmit styles the input[type="submit"] element using styled with background-color set to # 1f77b4, padding set to 10px, cursor set to pointer, font-size set to 16px, color set to white and font-weight set to bold.
 
 ### Heading component
 
 - [ ] Create a Heading component folder with an index.js file.
 - [ ] In the index.js file export by default a Heading function which returns a StyledH2 element.
-- [ ] Import styled from "styled-components".
-- [ ] The StyledH2 styles the h2 using styled with text-align set to center.
+- [ ] Make a default import of styled from "styled-components".
+- [ ] The StyledH2 styles the h2 element using styled with text-align set to center.
 
 ### Paragraph component
 
 - [ ] Create a Paragraph component folder with an index.js file.
 - [ ] In the index.js file export by default a Paragraph function which returns a StyledP element.
-- [ ] Import styled from "styled-components".
-- [ ] The StyledP styles the p using styled with text-align set to center.
+- [ ] Make a default import of styled from "styled-components".
+- [ ] The StyledP styles the p element using styled with text-align set to center.
 
 ### FileUploader component
 
@@ -138,6 +124,7 @@ So that I can finally generate a plot.
 
 ### UploadData component
 
+- [ ] Install these libraries: convert-csv-to-array and convert-string-to-number.
 - [ ] Add a UploadData component folder and inside create an index.js file.
 - [ ] In the index.js file export by default an UploadData function.
 - [ ] Make a default import of Heading from "../Heading".
@@ -148,10 +135,11 @@ So that I can finally generate a plot.
 - [ ] Make a default import of CorrectArrays from "../CorrectArrays".
 - [ ] Make a named import of useState from "react".
 - [ ] Make a default import of useLocalStorageState from "use-local-storage-state".
+- [ ] Add const { convertCSVToArray } = require("convert-csv-to-array");
 - [ ] Declare a state for the variable keynames using useLocalStorageState with a default value set to []. This will contain the names of the columns in the CSV file.
 - [ ] Declare a state for the variable vals using useLocalStorageState with a default value set to []. This will contain the array of objects obtained from the conversion of the CSV file.
 - [ ] Declare a state for the variable fileObj using useState with an initial value set to {}. This will contain the object representing the uploaded file.
-- [ ] Declare a state for the variable isUploaded using useState with an initial value set to false. This variable will contain the status about the upload and will serve the enable or disable the InputTypeSubmit component.
+- [ ] Declare a state for the variable isUploaded using useState with an initial value set to false. This variable will contain the status about the upload and will serve to enable or disable the InputTypeSubmit component.
 - [ ] Declare a handleFile function taking file as argument. The function sets the setFileObj to file and sets the setIsUploaded to true.
 - [ ] Declare a fileName variable set to fileObj.name.
 - [ ] Declare a handleSubmit function which takes event as argument and does event.preventDefault().
@@ -177,8 +165,13 @@ So that I can finally generate a plot.
 
 - [ ] The function returns, within a fragment, the Heading component, the Paragraph component and a form element.
 - [ ] The Heading component has for text "Step 1: Upload a CSV file to get the data.".
-- [ ] The Paragraph component has for text notes about the header of the file, the delimiter in the file and missing values.
-- [ ] Inside the form element are nested the FileUploader component and the CenteredDiv component.
+- [ ] The Paragraph component has for text "Note: the file should have a header.
+      Note: the file should be comma-delimited and the decimal
+      separator for numbers should be a period (.).
+      Note: if the file contains missing values, then replace
+      these values in the file by null.".
+- [ ] Inside the form element are nested the FileUploader component, a curly bracket with conditional rendering and the CenteredDiv component.
+- [ ] The curly bracket contains `fileName ? <p>Uploaded file: {fileName}</p> : <p>No file chosen</p>` .
 - [ ] The FileUploader component takes the handleFile as prop.
 - [ ] The form element takes handleSubmit as prop to the onSubmit attribute.
 - [ ] Inside the CenteredDiv component is nested the InputTypeSubmit component.
@@ -186,7 +179,5 @@ So that I can finally generate a plot.
 
 ### index.js file
 
-The index.js file exports a Homepage function by default.
-
 - [ ] Import UploadData by default from "/Components/UploadData".
-- [ ] The function returns the UploadData component.
+- [ ] The Homepage function returns the UploadData component.
