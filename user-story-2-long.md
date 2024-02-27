@@ -24,6 +24,8 @@ So that I can finally generate a plot.
 
 ## Tasks
 
+- [ ] Create a feature branch "select-chart-type".
+
 ### Creation of chart-types folder in the assets folder and icon images
 
 - [ ] Inside the assets folder create a chart-types folder.
@@ -99,7 +101,7 @@ So that I can finally generate a plot.
 - [ ] In the index.js file make a default import of Button from "../Button".
 - [ ] Pass the setHasCompletedStep1 as prop to the UploadData function.
 - [ ] Declare a state for the hasConvertedFile variable using useState with an initial value set to false.
-- [ ] In the handleConversion function set hasConvertedFile to true.
+- [ ] In the handleConversion function set setHasConvertedFile to true.
 - [ ] Declare a handleClick function which sets setHasCompletedStep1 to true.
 - [ ] In the function return add the Button component after the form element.
 - [ ] The Button component has for text "Next" and takes the handleClick as prop to the onClick attribute and takes !hasConvertedFile for the disabled attribute.
