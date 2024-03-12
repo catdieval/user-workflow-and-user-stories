@@ -43,8 +43,8 @@ As a user I want to give a title to the graph to better understand what the plot
 
 - [ ] In the Plotting Component, access titleLabel.
   - [ ] Use titleLabel != "" as additional condition for the rendering of the Plot component.
-  - [ ] Set titleLabel as value to the title key in the Layout attribute of the Plot component, like
+  - [ ] Set titleLabel as value to the title key in the layout attribute of the Plot component, like
         `title: {
-    text: titleLabel,
-  },`
+  text: titleLabel,
+},`
 - [ ] Add the GraphTitle component to the index.js file (before the Plotting component).
