@@ -24,9 +24,10 @@ As a user I want to give labels to the x- und y-axis to have a descriptive plot 
 
 - [ ] Create an InputTypeText component:
 
-  - [ ] The function has for argument the placeholderString prop and the onChange prop.
-  - [ ] The function renders an input of type "text".
-  - [ ] The input has the placeholder attribute set to placeholderString as prop and the onChange attribute set to onChange as prop.
+  - [ ] The function has for argument the placeholderString prop, the onChange prop and the idString prop.
+  - [ ] The function renders a label element and an input of type "text".
+  - [ ] The label has the htmlFor attribute set to idString and has for text `${idString}:`.
+  - [ ] The input has the placeholder attribute set to placeholderString as prop, has the onChange attribute set to onChange as prop and has the id attribute set to idString and the name attribute set to idString.
 
 - [ ] Create a Axis - Component:
   - [ ] create two forms (input type text)
@@ -36,9 +37,9 @@ As a user I want to give labels to the x- und y-axis to have a descriptive plot 
     - [ ] use logical AND to disable button when there is YLabel value
 - [ ] in the Plotting component set the xLabel and yLabel variables to the title key of the x-axis and the y-axis respectively, in the layout attribute of the Plot component, like
   - [ ] `title: {
-        text: XLabel,
-      },`
+    text: XLabel,
+  },`
   - [ ] `title: {
-        text: YLabel,
-      },`.
+    text: YLabel,
+  },`.
 - [ ] Add the Axis-Component to the index.js - file of the pages-folder.
