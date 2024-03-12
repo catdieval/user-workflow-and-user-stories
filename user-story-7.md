@@ -39,12 +39,12 @@ As a user I want to give a title to the graph to better understand what the plot
   - [ ] The third Paragraph has for text "Label for the y-axis:".
   - [ ] The fourth Paragraph has for text yLabel.
   - [ ] The InputTypeText takes "Fill me with title" as prop to the placeholderString attribute and the handleTitleChange function as prop to the onChange attribute and "Title" as prop to the idString attribute.
-  - [ ] The StyleInputTypeSubmit component has "submit" as value to the type attribute, "Submit" as value to the value attribute, the handleTitle function as value to the onClick attribute and !ihasEnteredTitle as value to the disable attribute.
+  - [ ] The StyleInputTypeSubmit component has "submit" as value to the type attribute, "Next" as value to the value attribute, the handleTitle function as value to the onClick attribute and !ihasEnteredTitle as value to the disable attribute.
 
 - [ ] In the Plotting Component, access titleLabel.
   - [ ] Use titleLabel != "" as additional condition for the rendering of the Plot component.
   - [ ] Set titleLabel as value to the title key in the Layout attribute of the Plot component, like
         `title: {
-        text: titleLabel,
-      },`
+    text: titleLabel,
+  },`
 - [ ] Add the GraphTitle component to the index.js file (before the Plotting component).
