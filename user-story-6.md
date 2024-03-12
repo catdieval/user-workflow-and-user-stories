@@ -25,11 +25,13 @@ As a user I want to give labels to the x- und y-axis to have a descriptive plot 
 - [ ] Create a new feature branch "Labels-to-axes"
 
 - [ ] Create an InputTypeText component:
+
   - [ ] The function has for argument the placeholderString prop, the onChange prop and the idString prop.
   - [ ] The function renders a label element and an input of type "text".
   - [ ] The label has the htmlFor attribute set to idString and has for text `${idString}:`.
   - [ ] The input has the required attribute, has the placeholder attribute set to placeholderString as prop, has the onChange attribute set to onChange as prop and has the id attribute set to idString and the name attribute set to idString.
-- [ ] Create a XLabelYLabelGraph component.
+
+- [ ] Create a XandYLabelsGraph component.
 
   - [ ] Access the xKey and the yKey variables.
   - [ ] useState for the hasEnteredYLabel variable with initial value set to false.
@@ -50,13 +52,13 @@ As a user I want to give labels to the x- und y-axis to have a descriptive plot 
   - [ ] Use xLabel != "" and yLabel !="" as additional conditions for the rendering of the Plot component.
   - [ ] Set xLabel as value to the title key of the x-axis in the layout attribute of the Plot component, like
         `title: {
- text: XLabel,
- },`
+text: XLabel,
+},`
   - [ ] Set yLabel as value to the title key of the y-axis in the layout attribute of the Plot component like
         `title: {
   text: YLabel,
 },`
-- [ ] Add the XLabelYLabelGraph component to the index.js file (after the ListOfCharts component).
+- [ ] Add the XandYLabelsGraph component to the index.js file (after the ListOfCharts component).
 
 %%%%%%%
 
