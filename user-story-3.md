@@ -37,8 +37,8 @@ to finally generate a nice plot of my data.
 - [ ] Create a ChooseVariables component
   - [ ] useLocalStorageState for the XVariable variable with default value set to [].
   - [ ] useLocalStorageState for the YVariable variable with default value set to [].
-  - [ ] useState for the XKey variable with initial value set to "".
-  - [ ] useState for the YKey variable with initial value set to "".
+  - [ ] useLocalStorageState for the XKey variable with default value set to "".
+  - [ ] useLocalStorageState for the YKey variable with default value set to "".
   - [ ] useState for the hasChosenLastVariable variable with initial value set to false.
   - [ ] Write a handleSubmit function which does event.preventDefault().
   - [ ] Write a handleXChange function which declares a choice variable set to event.target.value and if choice is different from "" (if the user selects another option than Select) then sets setXKey to choice.
@@ -47,6 +47,8 @@ to finally generate a nice plot of my data.
     - [ ] In tempXArray fill in with the values associated to the key in vals corresponding to the XKey value.
     - [ ] In tempYArray fill in with the values associated to the key in vals corresponding to the YKey value.
     - [ ] Set setXvariable to tempXArray and set setYVariable to tempYArray.
+    - [ ] Use an alert message with text "Data for the x and y variables are assigned.".
+  - [ ] if xKey !=="" && xKey==yKey then use an alert message with the text "Are you sure you want to use the same variable for x as y? It would give a meaningless plot."
   - [ ] ChooseVariables returns, within a fragment, the Heading component and a form element.
   - [ ] The Heading takes "Step 3: choose the variables you want to plot." for text.
   - [ ] The form element contains the CenteredDiv component and inside of it are nested one time the Paragraph component and the DropDownMenu component (for the x axis), then again these 2 components (for the y-axis) and the StyledInputTypeSubmit component.
