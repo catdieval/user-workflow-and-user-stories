@@ -32,7 +32,8 @@ As a user I want to give a title to the graph to better understand what the plot
   - [ ] Declare a handleTitleChange function which sets setTitleLabel to event.target.value and sets setHasEnteredTitle to true.
   - [ ] Declare a handleTitle function which sends an alert with the text set to "Title of the graph is assigned".
   - [ ] The component renders 4 instances of Paragraph and a form.
-  - [ ] Inside the form are nested the InputTypeText component and the StyledInputTypeSubmit component.
+  - [ ] Inside the form is nested the Container component, and inside of it are nested the InputTypeText component and the StyledInputTypeSubmit component.
+  - [ ] The Container component has the $centered attribute set to "center".
   - [ ] The form takes the handleSubmit function as prop to the onSubmit attribute.
   - [ ] The first Paragraph has for text "Label for the x-axis:".
   - [ ] The second Paragraph has for text xLabel.
