@@ -43,7 +43,7 @@ As a user I want to set the properties (color, style and width) of my lines (if 
   - [ ] Inside the form is nested the `Container` component, and inside of it, 3 instances of the `Paragraph` component, 3 instances of the `DropDownMenu` component and the `StyledInputTypeSubmit` component.
   - [ ] The `Container` component has the $centered attribute set to "center".
   - [ ] The first / second / third render of `DropDownMenu` has "Line color" / "Line style" / "Line width" as prop to the `idString` attribute and the `handleLineColorChange / handleLineStyleChange / handleLineWithChange` function as prop to the `onChange` attribute and `lineColorArray / lineStyleArray / lineWidthArray` as prop to the `arrayOfOptions` attribute.
-  - [ ] The `StyleInputTypeSubmit` component has "Next" as value to the value attribute, the `handleLineProperties` function as value to the `onClick` attribute and `completedLineProperties()` as value to the disable attribute.
+  - [ ] The `StyleInputTypeSubmit` component has "Next" as value to the value attribute, the `handleLineProperties` function as value to the `onClick` attribute and `completedLineProperties()` as value to the disabled attribute.
 
   - [ ] Use conditional rendering in the return to display the output only if `clickedChartType = "line-plot"` and otherwise display null.
 
