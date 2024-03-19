@@ -49,7 +49,7 @@ As a user I want to set the properties of the markers (color, symbol, size) of m
   - [ ] Inside the form is nested the `Container` component, and inside of it, 3 instances of the `Paragraph` component, 3 instances of the `DropDownMenu` component and the `StyledInputTypeSubmit` component.
   - [ ] The `Container` component has the $centered attribute set to "center".
   - [ ] The first / second / third render of `DropDownMenu` has "Marker color" / "Marker symbol" / "Marker size" as prop to the `idString` attribute and the `handleMarkerColorChange / handleMarkerSymbolChange / handleMarkerSizeChange` function as prop to the `onChange` attribute and `markerColorArray / markerSymbolArray / markerSizeArray` as prop to the arrayOfOptions attribute.
-  - [ ] The `StyleInputTypeSubmit` component has "Next" as value to the value attribute, the handleMarkerProperties function as value to the `onClick` attribute and and `completedMarkerProperties` function as value to the disable attribute.
+  - [ ] The `StyleInputTypeSubmit` component has "Next" as value to the value attribute, the handleMarkerProperties function as value to the `onClick` attribute and `completedMarkerProperties()` function as value to the disable attribute.
   - [ ] Use conditional rendering in the return to display the output only if clickedChartType = "line+markers-plot" or if clickedChartType = "scatter-plot" and otherwise display null.
 
 - [ ] In the index.js file, add the MarkerProperties component (before the Plotting component).
