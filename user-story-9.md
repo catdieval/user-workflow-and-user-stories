@@ -67,4 +67,4 @@ As a user I want to set the properties of the markers (color, symbol, size) of m
   },
 }`.
   - [ ] In the return of the function, add a conditional expression with ternary operator between : and null, like X ? Y : , where X is a copy of the conditional statement and Y is a copy of the Plot render.
-  - [ ] In the second render of Plot replace the value of the data attribute by {[dataOptions]} and in the second conditional expression add markerColor.length > 0 as additional condition.
+  - [ ] In the first render of Plot replace the value of the data attribute by {[dataOptions]} and in the first conditional expression add markerColor.length > 0 as additional condition.
