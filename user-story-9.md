@@ -37,7 +37,6 @@ As a user I want to set the properties of the markers (color, symbol, size) of m
 - [ ] In the lib folder create a `listOfMarkerProperties.js` file.
   - [ ] Declare a `markerColorArray, a markerSymbolArray and a markerSizeArray` arrays.
   - [ ] `markerColorArray / markerSymbolArray / markerSizeArray` contain the options for the color, the symbol and the size.
-  - [ ] Declare a `completedAllDropDownMenus` function to disable the "Next" button until the user has selected values in all dropdown menus.
 - [ ] Create a `MarkerProperties` component.
 
   - [ ] useState for the `markerColor / markerSymbol / markerSize` variable with initial value set to "" / "" / 0.
