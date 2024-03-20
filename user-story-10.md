@@ -56,7 +56,7 @@ so that I can update the visual display.
   mode: selectedMode,
   type: selectedType,
   marker: {
-    color: markerColor,
+    color: barColor,
   },
 }`.
   - [ ] In the return of the function, add a conditional expression with ternary operator between : and null, like X ? Y : , where X is a copy of the conditional statement and Y is a copy of the Plot render.
