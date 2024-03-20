@@ -26,11 +26,11 @@ As a user I want to give a title to the graph to better understand what the plot
 - [ ] Create a GraphTitle component and an index.js file inside.
 
   - [ ] Retrieve the xLabel and yLabel variables from local storage.
-  - [ ] useState for the hasEnteredTitle variable with initial value set to false.
-  - [ ] useLocalStorageState for the titleLabel variable with initial value set to "".
+  - [ ] useState for the titleLabel variable with initial value set to "".
   - [ ] Declare a handleSubmit function which does event.preventDefault() .
   - [ ] Declare a handleTitleChange function which sets setTitleLabel to event.target.value and sets setHasEnteredTitle to true.
   - [ ] Declare a handleTitle function which sends an alert with the text set to "Title of the graph is assigned".
+  - [ ] Write a completedTitle function to disable the "Next" button until the user has entered a value for the title.
   - [ ] The component renders 4 instances of Paragraph and a form.
   - [ ] Inside the form is nested the Container component, and inside of it are nested the InputTypeText component and the StyledInputTypeSubmit component.
   - [ ] The Container component has the $centered attribute set to "center".
@@ -40,7 +40,7 @@ As a user I want to give a title to the graph to better understand what the plot
   - [ ] The third Paragraph has for text "Label for the y-axis:".
   - [ ] The fourth Paragraph has for text yLabel.
   - [ ] The InputTypeText takes "Fill me with title" as prop to the placeholderString attribute and the handleTitleChange function as prop to the onChange attribute and "Title" as prop to the idString attribute.
-  - [ ] The StyleInputTypeSubmit component has "submit" as value to the type attribute, "Next" as value to the value attribute, the handleTitle function as value to the onClick attribute and !ihasEnteredTitle as value to the disable attribute.
+  - [ ] The StyleInputTypeSubmit component has "submit" as value to the type attribute, "Next" as value to the value attribute, the handleTitle function as value to the onClick attribute and completedTitle() as value to the disabled attribute.
 
 - [ ] In the Plotting Component, access titleLabel.
   - [ ] Use titleLabel != "" as additional condition for the rendering of the Plot component.
