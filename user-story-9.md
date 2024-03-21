@@ -18,17 +18,17 @@ As a user I want to set the properties of the markers (color, symbol, size) of m
 
 ## Acceptance Criteria
 
-- [ ] The component is displayed only if the user chose line+markers-plot or scatter-plot.
+- [ ] The component is displayed only if the user chose line-markers-plot or scatter-plot.
 - [ ] Heading with text: "Marker properties".
 - [ ] Paragraph with text "Marker color".
 - [ ] The user can choose from a dropdown menu the color of the markers, options: red, blue, green, yellow, orange, pink, purple, maroon, black, grey.
 - [ ] Paragraph with text "Marker symbol".
-- [ ] The user can choose from a dropdown menu the symbol of the markers, options: filled circle, open circle, filled square, open square, filled diamond, open diamond, cross, x, filled triangle up, open triangle up, filled triangle down, open triangle down.
+- [ ] The user can choose from a dropdown menu the symbol of the markers, options: filled-circle, open-circle, filled-square, open-square, filled-diamond, open-diamond, cross, x, filled-triangle-up, open-triangle-up, filled-triangle-down, open-triangle-down.
 - [ ] Paragraph with text "Marker size".
 - [ ] The user can choose from a dropdown menu the size of the markers, options: 6, 7, 8, 9, 10, 11.
 - [ ] "Next" button.
 - [ ] When the user clicks on the "Next" button, an alert message is displayed "You chose the marker properties.".
-- [ ] The plot gets updated with the marker properties (only if the user chose line+markers-plot or scatter-plot).
+- [ ] The plot gets updated with the marker properties (only if the user chose line-markers-plot or scatter-plot).
 
 ## Tasks
 
@@ -55,9 +55,9 @@ As a user I want to set the properties of the markers (color, symbol, size) of m
 - [ ] In the index.js file, add the MarkerProperties component (before the Plotting component).
 
 - [ ] In the Plotting component, access the markerColor, markerSymbol and markerSize variables.
-  - [ ] If clickedChartType="line+markers-plot" or if clickedChartType="scatter-plot", declare as var a dataOptions variable like `dataOptions = {
-  x: XVariable,
-  y: YVariable,
+  - [ ] If clickedChartType="line-markers-plot" or if clickedChartType="scatter-plot", declare as var a dataOptions variable like `dataOptions = {
+  x: xVariable,
+  y: yVariable,
   mode: selectedMode,
   type: selectedType,
   marker: {
