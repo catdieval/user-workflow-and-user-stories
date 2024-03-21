@@ -51,8 +51,8 @@ so that I can update the visual display.
 
 - [ ] In the Plotting component, access the barColor variable.
   - [ ] If clickedChartType="bar-plot", declare as var a dataOptions variable like `dataOptions = {
-  x: XVariable,
-  y: YVariable,
+  x: xVariable,
+  y: yVariable,
   mode: selectedMode,
   type: selectedType,
   marker: {
