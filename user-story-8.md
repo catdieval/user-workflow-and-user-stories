@@ -17,7 +17,7 @@ As a user I want to set the properties (color, style and width) of my lines (if 
 - [ ] Paragraph with text "Line color".
 - [ ] The user can choose from a dropdown menu the color of the line, options: red/blue/green/yellow/orange/pink/purple/maroon/black/grey.
 - [ ] Paragraph with text "Line style".
-- [ ] The user can choose from a dropdown menu the linestyle, options: solid, dash, dot, long dash, dash dot.
+- [ ] The user can choose from a dropdown menu the linestyle, options: solid, dash, dot, longdash, dashdot.
 - [ ] Paragraph with text "Line width (in pixels)".
 - [ ] The user can choose from a dropdown menu the thickness of the line, options: 1, 2, 3, 4, 5.
 - [ ] "Next" button.
@@ -51,8 +51,8 @@ As a user I want to set the properties (color, style and width) of my lines (if 
 
 - [ ] In the `Plotting` component, access the `lineColor, lineStyle and lineWidth` variables.
   - [ ] If `clickedChartType="line-plot"`, declare as var a dataOptions variable like `dataOptions = {
-  x: XVariable,
-  y: YVariable,
+  x: xVariable,
+  y: yVariable,
   mode: selectedMode,
   type: selectedType,
   line: {
