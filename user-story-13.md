@@ -30,4 +30,30 @@ As a user I want to visit the homepage where i can read what is the App about an
 
 ## Tasks
 
-- [ ]
+- [ ] Create a feature branch "Homepage".
+
+- [ ] In the lib folder create a file "unorderedListsofBulletPoints.js".
+
+  - [ ] In the file create an arrayOfSteps / arrayOfPossibilities array which contains strings for the different steps / possibilities.
+
+- [ ] Create an UnorderedList component:
+
+  - [ ] It takes arrayOfBulletPoints as prop.
+  - [ ] The component returns a ul element and nested inside is a mapping over arrayOfBulletsPoints using a bulletPoint argument to render a li element.
+  - [ ] The li has for text bulletPoint and takes bulletPoint as value to the key attribute.
+
+- [ ] Create a HomePage component:
+
+  - [ ] useState for the clickedGetStarted variable with initial value set to false.
+  - [ ] Write a handleGetStarted function which sets setHasClickedGetStarted to true.
+  - [ ] HomePage renders these components: Paragraph, Container, Heading and Container.
+  - [ ] Container has $centered attribute set to "center".
+  - [ ] The first render of Container has UnorderedList nested inside.
+  - [ ] The second render of Container has UnorderedList and Button nested inside.
+  - [ ] The first / second render of UnorderedList takes arrayOfSteps / arrayOfPossibilities as prop to the arrayOfBulletPoints attribute.
+  - [ ] Button has for text "Get started" and has handleGetStarted as prop to the onClick attribute.
+
+- [ ] In the \_app.js, add the Homepage component (before UploadData).
+
+- [ ] In UploadData access hasClickedGetStarted.
+  - [ ] In the return of UploadData, use a conditional rendering such that the component is displayed only if hasClickedGetStarted is true.
