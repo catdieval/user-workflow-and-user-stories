@@ -62,7 +62,7 @@ As a user I want to visit the homepage where i can read what is the App about an
   - [ ] The first / second render of UnorderedList takes arrayOfSteps / arrayOfPossibilities as prop to the arrayOfBulletPoints attribute.
   - [ ] Button has for text "Get started" and has handleGetStarted as prop to the onClick attribute.
 
-- [ ] In the \_app.js, add the Homepage component (before UploadData).
+- [ ] In the index.js, add the Homepage component (before UploadData).
 
 - [ ] In UploadData access hasClickedGetStarted.
   - [ ] In the return of UploadData, use a conditional rendering such that the component is displayed only if hasClickedGetStarted is true.
