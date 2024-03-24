@@ -23,7 +23,9 @@ As a user I want to adjust the layout of my plot to have a clearly represented p
 - [ ] Only when the user has chosen thie "no" option in the menu above:
   - [ ] Paragraph with text "Minimum and maximum values for ax(es)".
   - [ ] User can set the minimum and maximum values separately for the x- and y-axis: one input of type "number" for the minimum value, one input of type "number" for the maximum value.
-- [ ] Paragraph with text "Logarithmic scale for axes:". At the right of the paragraph is an "Info" button where a click displays a dialogue with text "A logarithmic scale (or log scale) is a way of displaying numerical data over a very wide range of values in a compact way. As opposed to a linear scale in which every unit of distance corresponds to adding by the same amount, on a logarithmic scale, every unit of length corresponds to multiplying the previous value by the same amount." .
+- [ ] Paragraph with text "Logarithmic scale for axes:". At the right of the paragraph is an "Info" button.
+  - [ ] When the user clicks on the "Info" button, a dialogue with a "x" button gets displayed. The dialogue has for text the text about log scale shown in the Acceptance Criteria.
+  - [ ] When the user clicks on the "x" button, the dialogue closes.
 - [ ] User can decide to have a logarithmic scale separately for the x- and y-axis by using radio-buttons ("yes"/"no, use a linear scale").
 - [ ] "Next" button which stays disabled until the user has entered values in all the fields.
 - [ ] The plot gets updated with the layout properties.
