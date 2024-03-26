@@ -34,6 +34,7 @@ so that I can update the visual display.
 
 - [ ] Create a `MarkerProperties` component.
 
+  - [ ] Access titleLabel.
   - [ ] useState for the `barColor` variable with initial value set to "".
   - [ ] Declare a `handleBarColorChange` function which declares a choice variable set to event.target.value.
   - [ ] Declare a `completedBarProperties` function to disable the "Next" button until the user has selected a value in the dropdown menu.
@@ -45,7 +46,7 @@ so that I can update the visual display.
   - [ ] The `Container` component has the $centered attribute set to "center".
   - [ ] `DropDownMenu` has "Bar color" as prop to the `idString` attribute and the `handleBarColorChange` function as prop to the `onChange` attribute and `barColorArray` as prop to the arrayOfOptions attribute.
   - [ ] The `StyleInputTypeSubmit` component has "Next" as value to the value attribute, the handleBarProperties function as value to the `onClick` attribute and `completedBarProperties()` function as value to the disabled attribute.
-  - [ ] Use conditional rendering in the return to display the output only if clickedChartType = "bar-plot" and otherwise display null.
+  - [ ] Use conditional rendering in the return to display the output only if titleLabel.length > 0 and if clickedChartType = "bar-plot".
 
 - [ ] In the index.js file, add the BarProperties component (before the Plotting component).
 
