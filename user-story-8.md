@@ -33,6 +33,7 @@ As a user I want to set the properties (color, style and width) of my lines (if 
   - [ ] `lineColorArray` / `lineStyleArray` / `lineWidthArray` contain the color / style / width options.
 - [ ] Create a `LineProperties` component.
 
+  - [ ] Access titleLabel.
   - [ ] useState for the `lineColor / lineStyle / lineWidth` variable with initial value set to "" / "" / 0.
   - [ ] Declare a `handleLineColorChange / handleLineStyleChange / handleLineWidthChange` function which declares a choice variable set to event.target.value.
   - [ ] Declare a `completedLineProperties` function to disable the "Next" button until the user has selected values in all dropdown menus.
@@ -45,7 +46,7 @@ As a user I want to set the properties (color, style and width) of my lines (if 
   - [ ] The first / second / third render of `DropDownMenu` has "Line color" / "Line style" / "Line width" as prop to the `idString` attribute and the `handleLineColorChange / handleLineStyleChange / handleLineWithChange` function as prop to the `onChange` attribute and `lineColorArray / lineStyleArray / lineWidthArray` as prop to the `arrayOfOptions` attribute.
   - [ ] The `StyleInputTypeSubmit` component has "Next" as value to the value attribute, the `handleLineProperties` function as value to the `onClick` attribute and `completedLineProperties()` as value to the disabled attribute.
 
-  - [ ] Use conditional rendering in the return to display the output only if `clickedChartType = "line-plot"` and otherwise display null.
+  - [ ] Use conditional rendering in the return to display the output only if titleLabel.length > 0 and if `clickedChartType = "line-plot"`.
 
 - [ ] In the index.js file, add the `LineProperties` component (before the Plotting component).
 
