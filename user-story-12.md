@@ -26,8 +26,7 @@ As a user I want to make preferences for the style and the layout of my plot to 
 
 - [ ] Create a PlottingProperties Component:
 
-  - [ ] It returns the Heading component and the LayoutProperties component.
+  - [ ] It returns Heading, LineProperties, MarkerProperties, BarProperties and LayoutProperties.
   - [ ] The Heading takes "Step 6: Assign properties to the graph" for text.
-  - [ ] Between Heading and LayoutProperties, add a conditional rendering for a component: if clickedChartType = "line-plot" / "bar-plot" / "scatter-plot" or "line-markers-plot", then render LineProperties / BarProperties / MarkerProperties.
 
 - [ ] In the index.js, add the PlottingProperties component (before Plotting) and remove MarkerProperties, BarProperties, LineProperties and LayoutProperties from the return.
