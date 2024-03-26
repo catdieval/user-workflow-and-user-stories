@@ -39,6 +39,7 @@ As a user I want to set the properties of the markers (color, symbol, size) of m
   - [ ] `markerColorArray / markerSymbolArray / markerSizeArray` contain the options for the color, the symbol and the size.
 - [ ] Create a `MarkerProperties` component.
 
+  - [ ] Access titleLabel.
   - [ ] useState for the `markerColor / markerSymbol / markerSize` variable with initial value set to "" / "" / 0.
   - [ ] Declare a `handleMarkerColorChange / handleMarkerSymbolChange / handleMarkerSizeChange` function which declares a choice variable set to event.target.value.
   - [ ] Declare a `completedMarkerProperties` function to disable the "Next" button until the user has selected values in all dropdown menus.
@@ -50,7 +51,7 @@ As a user I want to set the properties of the markers (color, symbol, size) of m
   - [ ] The `Container` component has the $centered attribute set to "center".
   - [ ] The first / second / third render of `DropDownMenu` has "Marker color" / "Marker symbol" / "Marker size" as prop to the `idString` attribute and the `handleMarkerColorChange / handleMarkerSymbolChange / handleMarkerSizeChange` function as prop to the `onChange` attribute and `markerColorArray / markerSymbolArray / markerSizeArray` as prop to the arrayOfOptions attribute.
   - [ ] The `StyleInputTypeSubmit` component has "Next" as value to the value attribute, the handleMarkerProperties function as value to the `onClick` attribute and `completedMarkerProperties()` function as value to the disabled attribute.
-  - [ ] Use conditional rendering in the return to display the output only if clickedChartType = "line+markers-plot" or if clickedChartType = "scatter-plot" and otherwise display null.
+  - [ ] Use conditional rendering in the return to display the output only if titleLabel.length > 0 and if clickedChartType = "line+markers-plot" or if clickedChartType = "scatter-plot".
 
 - [ ] In the index.js file, add the MarkerProperties component (before the Plotting component).
 
