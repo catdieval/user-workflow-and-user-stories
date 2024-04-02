@@ -20,14 +20,17 @@ So that I can improve the visualisation of my data if I have very large/very sma
 ## Tasks
 
 - [ ] Create a feature branch "Log-scale-properties".
+
 - [ ] Create a `DialogueBox` component:
 
-  - [ ] Use the Material-Ui library: `npm install @mui/material @emotion/react @emotion/styled`.
-  - [ ] Import the Dialog and DialogTitle components from the Material Ui library.
+  - [ ] Use the Material-Ui library: `npm install @mui/material @@mui/icons-material`.
+  - [ ] Import the Dialog, IconButton and CloseIcon components from the Material Ui library.
   - [ ] Declare a `useState` for `openDialog`.
-  - [ ] Declare a `openDialogBox` function -> sets `setOpenDialog` function true.
-  - [ ] Declare a `handleClose` function -> sets `setOpenDialog` function false.
-  - [ ] Return: `button` (with onClick = openDialogBox), `Dialog` (with onClose = handleClose) and `DialogTitle` with the text described in the acceptance criteria/wireframe.
+  - [ ] Declare a `handleOpenDialog` function -> sets `setOpenDialog` function to true.
+  - [ ] Declare a `handleCloseDialog` function -> sets `setOpenDialog` function to false.
+  - [ ] Return: `button` (with onClick = handleOpenDialog) and `Dialog` (with onClose = handleCloseDialog and open = openDialog).
+  - [ ] Inside `Dialog`: `IconButton` (aria-label = "close" and onClick = handleCloseDialog) and `Paragraph`.
+  - [ ] Inside `IconButton`: `CloseIcon`.
 
 - [ ] Create a `LogScaleProperties` component:
 
