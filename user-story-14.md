@@ -43,4 +43,4 @@ As a user I want to adjust the layout of my plot to have a clearly represented p
   - [ ] Inside `form`: `GridProperties`, `RangeProperties`, `LogScaleProperties` and `StyledInputTypeSubmit`.
 - [ ] The `StyleInputTypeSubmit` component has "Next" as value to the value attribute, the handleLayoutProperties function as value to the `onClick` attribute and `completedLayoutProperties()` function as value to the disabled attribute.
 
-- [ ] In the index.js, add the `LayoutProperties` component to the return (before `Plotting`).
+- [ ] In the index.js, add the `LayoutProperties` component to the return (before `Plotting`) and remove GridProperties, RangeProperties and LogScaleProperties from the return.
