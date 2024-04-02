@@ -31,3 +31,16 @@ As a user I want to adjust the layout of my plot to have a clearly represented p
 - [ ] The plot gets updated with the layout properties.
 
 ## Tasks
+
+- [ ] Create a new feature branch "Layout-properties".
+
+- [ ] Create a `LayoutProperties` component.
+  - [ ] Write a `handleSubmit function` which does event.preventDefault().
+  - [ ] Declare a `handleLayoutProperties` function with an alert message.
+  - [ ] Declare a `completedLayoutProperties` function to disable the "Next" button until the user has selected values in all menus.
+  - [ ] Returns: `Heading` and `form` element.
+  - [ ] The form takes the `handleSubmit` function as prop to the `onSubmit` attribute.
+  - [ ] Inside `form`: `GridProperties`, `RangeProperties`, `LogScaleProperties` and `StyledInputTypeSubmit`.
+- [ ] The `StyleInputTypeSubmit` component has "Next" as value to the value attribute, the handleLayoutProperties function as value to the `onClick` attribute and `completedLayoutProperties()` function as value to the disabled attribute.
+
+- [ ] In the index.js, add the `LayoutProperties` component to the return (before `Plotting`).
