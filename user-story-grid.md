@@ -23,10 +23,10 @@ I want to have the possibility to choose to have a grid for the x-and y-axis and
 
 - [ ] Create a component `InputTypeRadio`:
 
-  - [ ] Function with props `idString`, `labelString` and `onClick`.
+  - [ ] Function with props `idString`, `labelString`, `valueString` and `onChange`.
   - [ ] Returns `label` and `input`.
   - [ ] label has idString as prop for text / htmlFor attribute.
-  - [ ] input has the required attribute, "radio" as value to the type attribute, onClick / labelString as prop to the onClick / name attribute and idString as prop to the id / value attribute.
+  - [ ] input has the required / checked attribute, "radio" as value to the type attribute, onChange / labelString / valueString as prop to the onChange / name / value attribute and idString as prop to the id attribute.
 
 - [ ] Create a component `GridProperties`:
 
@@ -39,8 +39,8 @@ I want to have the possibility to choose to have a grid for the x-and y-axis and
   - [ ] Return: ` Paragraph`, `Container` ($direction = "row") and a conditional rendering.
   - [ ] Inside Container are nested 2 instances of `Container` (one for x-axis grid and one for y-axis grid) ($direction="column").
   - [ ] Inside these instances of `Container` are nested `Paragraph` and 2 instances of `InputTypeRadio`.
-  - [ ] For x-axis: the first / second instance of `InputTypeRadio` has handleGridXAxis as prop to the onClick attribute, "x-axis-grid" as value to the labelString attribute and "yes" / "no" as value to the idString attribute.
-  - [ ] For y-axis: the first / second instance of `InputTypeRadio` has handleGridYAxis as prop to the onClick attribute, "y-axis-grid" as value to the labelString attribute and "yes" / "no" as value to the idString attribute.
+  - [ ] For x-axis: the first / second instance of `InputTypeRadio` has handleGridXAxis as prop to the onChange attribute, "x-axis-grid" as value to the labelString attribute, "yes" / "no" as value to the idString attribute and "true" / "false" as value to the valueString attribute.
+  - [ ] For y-axis: the first / second instance of `InputTypeRadio` has handleGridYAxis as prop to the onChange attribute, "y-axis-grid" as value to the labelString attribute, "yes" / "no" as value to the idString attribute and "true" / "false" as value to the valueString attribute.
   - [ ] Conditional rendering: if the user clicked "yes" in at least one of the previous menus then render `Paragraph` and `Container` ($direction = "row").
   - [ ] Inside `Container` are nested 1 or 2 instances of `DropDownMenu` depending on if the user clicked "yes" for 1 or 2 axes.
   - [ ] Separately for x-axis and y-axis (if applicable): `DropDownMenu` has lineStyleArray as prop to the arrayOfOptions attribute.
