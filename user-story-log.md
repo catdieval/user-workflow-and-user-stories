@@ -28,7 +28,7 @@ So that I can improve the visualisation of my data if I have very large/very sma
   - [ ] Declare a `useState` for `openDialog`.
   - [ ] Declare a `handleOpenDialog` function -> sets `setOpenDialog` function to true.
   - [ ] Declare a `handleCloseDialog` function -> sets `setOpenDialog` function to false.
-  - [ ] Return: `button` (with onClick = handleOpenDialog) and `Dialog` (with onClose = handleCloseDialog and open = openDialog).
+  - [ ] Return: `Button` (with onClick = handleOpenDialog) and `Dialog` (with onClose = handleCloseDialog and open = openDialog).
   - [ ] Inside `Dialog`: `IconButton` (aria-label = "close" and onClick = handleCloseDialog) and `Paragraph`.
   - [ ] Inside `IconButton`: `CloseIcon`.
 
