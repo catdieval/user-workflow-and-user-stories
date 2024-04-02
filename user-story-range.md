@@ -41,8 +41,8 @@ So that I can have a detailed look of my data.
   - [ ] Return: `Paragraph`,`Container` ($direction = "row") and a conditional rendering.
     - [ ] Inside Container are nested 2 instances of `Container` (one for x-axis range and one for y-axis range) ($direction="column").
     - [ ] Inside these instances of `Container` are nested `Paragraph` and 3 instances of `InputTypeRadio`.
-    - [ ] For x-axis: the first / second / third instance of `InputTypeRadio` has handleRangeXAxis as prop to the onClick attribute, "x-axis-range" as value to the labelString attribute and "yes, normal range" / "yes, reversed range" / "no, set minimum and maximum" as value to the idString attribute.
-    - [ ] For y-axis: the first / second / third instance of `InputTypeRadio` has handleRangeYAxis as prop to the onClick attribute, "y-axis-range" as value to the labelString attribute and "yes, normal range" / "yes, reversed range" / "no, set minimum and maximum" as value to the idString attribute.
+    - [ ] For x-axis: the first / second / third instance of `InputTypeRadio` has handleRangeXAxis as prop to the onChange attribute, "x-axis-range" as value to the labelString attribute and "yes, normal range" / "yes, reversed range" / "no, set minimum and maximum" as value to the idString attribute.
+    - [ ] For y-axis: the first / second / third instance of `InputTypeRadio` has handleRangeYAxis as prop to the onChange attribute, "y-axis-range" as value to the labelString attribute and "yes, normal range" / "yes, reversed range" / "no, set minimum and maximum" as value to the idString attribute.
     - [ ] Conditional rendering: if the user clicked "no, set minimum and maximum" in at least one of the previous menus then render `Paragraph` and `Container` ($direction = "row").
     - [ ] Inside `Container` are nested 1 or 2 instances of `Container`($direction="column") depending on if the user clicked "no, set minimum and maximum" for 1 or 2 axes.
     - [ ] Inside these instances of `Container` are further nested `Paragraph` and 2 instances of `InputTypeNumber`.
