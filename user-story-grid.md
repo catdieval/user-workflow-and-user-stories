@@ -23,7 +23,7 @@ I want to have the possibility to choose to have a grid for the x-and y-axis and
 
 - [ ] Create a component `InputTypeRadio`:
 
-  - [ ] Function with props `idString`, `labelString`, `valueString` and `onChange`.
+  - [ ] Function with props `idString`, `labelString`, `valueString`, `checked` and `onChange`.
   - [ ] Returns `label` and `input`.
   - [ ] label has idString as prop for text / htmlFor attribute.
   - [ ] input has the required / checked attribute, "radio" as value to the type attribute, onChange / labelString / valueString as prop to the onChange / name / value attribute and idString as prop to the id attribute.
