@@ -46,6 +46,6 @@ As a user I want to adjust the layout of my plot to have a clearly represented p
 
 - [ ] In the index.js, add the `LayoutProperties` component to the return (before `Plotting`) and remove GridProperties, RangeProperties and LogScaleProperties from the return.
 
-- [ ] In the `Plotting` component, access the `GridXAxis`, `GridYAxis`, `GridLineStyleXAxis`, `GridLineStyleYAxis`, `rangeXAxis`, `rangeYAxis`, `minXAxis`, `maxXAxis`, `minYAxis`, `maxYAxis`, `logXAxis` and `LogYAxis` variables.
+- [ ] In the `Plotting` component, access the `GridXAxis`, `GridYAxis`, `GridLineStyleXAxis`, `GridLineStyleYAxis`, `rangeXAxis`, `rangeYAxis`, `minXAxis`, `maxXAxis`, `minYAxis`, `maxYAxis`, `logXAxis` and `logYAxis` variables.
   - [ ] Use these variables in the conditional rendering.
   - [ ] Use these variables in the `layout` attribute in the Plot component.
